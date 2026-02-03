@@ -8,6 +8,13 @@ import {
   FileText,
 } from "lucide-react";
 import Nav from "../components/Nav";
+import {
+  Threat,
+  TimelineItem,
+  StatCard,
+  StatusRow,
+  Action,
+} from "../components/ThreatsStats";
 
 export default function Dashboard() {
   return (
@@ -73,29 +80,7 @@ export default function Dashboard() {
   );
 }
 
-/* Components */
 
-function StatCard({ title, value, change }) {
-  const positive = !change.startsWith("-");
-
-  return (
-    <div className="bg-[#0B1F4A]/80 border border-white/10 rounded-xl p-4">
-      <p className="text-xs text-gray-400 mb-1">{title}</p>
-      <div className="flex items-center justify-between">
-        <h3 className="text-xl font-bold">{value}</h3>
-        <span
-          className={`text-xs px-2 py-0.5 rounded-full ${
-            positive
-              ? "bg-green-500/20 text-green-400"
-              : "bg-red-500/20 text-red-400"
-          }`}
-        >
-          {change}
-        </span>
-      </div>
-    </div>
-  );
-}
 
 function ActiveThreats() {
   return (
@@ -149,26 +134,6 @@ function ActiveThreats() {
   );
 }
 
-function Threat({ level, title, meta, blocked }) {
-  const colors = {
-    critical: "from-red-600/30 to-red-500/10 text-red-400",
-    high: "from-orange-500/30 to-orange-400/10 text-orange-400",
-    medium: "from-yellow-500/30 to-yellow-400/10 text-yellow-400",
-    low: "from-green-500/30 to-green-400/10 text-green-400",
-  };
-
-  return (
-    <div
-      className={`bg-gradient-to-r ${colors[level]} rounded-lg p-3 border border-white/5`}
-    >
-      <div className="flex justify-between mb-1">
-        <p className="font-medium">{title}</p>
-        <span className="text-xs">{meta}</span>
-      </div>
-      <p className="text-xs text-gray-300">Blocked: {blocked} requests</p>
-    </div>
-  );
-}
 
 function Timeline() {
   return (
@@ -201,27 +166,7 @@ function Timeline() {
   );
 }
 
-function TimelineItem({ time, title, status, color }) {
-  const map = {
-    red: "text-red-400 bg-red-500/20",
-    orange: "text-orange-400 bg-orange-500/20",
-    green: "text-green-400 bg-green-500/20",
-  };
 
-  return (
-    <div className="flex items-start gap-3">
-      <div className="text-xs text-gray-400 w-10">{time}</div>
-      <div className="flex-1">
-        <p className="font-medium">{title}</p>
-        <span
-          className={`text-xs px-2 py-0.5 rounded-full mt-1 inline-block ${map[color]}`}
-        >
-          {status}
-        </span>
-      </div>
-    </div>
-  );
-}
 
 function SystemStatus() {
   return (
@@ -238,14 +183,7 @@ function SystemStatus() {
   );
 }
 
-function StatusRow({ label, value }) {
-  return (
-    <div className="flex justify-between">
-      <span className="text-gray-400">{label}</span>
-      <span className="text-green-400 font-medium">{value}</span>
-    </div>
-  );
-}
+
 
 function RiskLevel() {
   return (
@@ -284,14 +222,4 @@ function QuickActions() {
   );
 }
 
-function Action({ icon, text }) {
-  return (
-    <button className="w-full flex items-center justify-between px-3 py-2 rounded-lg bg-[#081733] hover:bg-[#102A64] transition">
-      <span className="flex items-center gap-2">
-        {icon}
-        {text}
-      </span>
-      <span className="text-green-400">→</span>
-    </button>
-  );
-}
+

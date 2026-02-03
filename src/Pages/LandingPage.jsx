@@ -8,7 +8,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#050B24] via-[#0B1C46] to-[#081436] text-white font-sans pt-10">
       {/* Navbar */}
-     <Nav /> 
+      <Nav />
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -132,11 +132,11 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2 text-green-500 font-bold">
             <ShieldCheck size={16} className="text-green-500" />
-            FRAUDSHIELD
+            AxiomVault
           </div>
 
           <p>
-            © {new Date().getFullYear()} FraudShield. Enterprise Cybersecurity.
+            © {new Date().getFullYear()} AxiomVault. Inc Cybersecurity.
           </p>
         </div>
       </footer>

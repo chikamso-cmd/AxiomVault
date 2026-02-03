@@ -118,12 +118,11 @@ export default function Threats() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
-        © 2026 FraudShield. Enterprise Fraud Detection.
+        © {new Date().getFullYear()} AxiomVault. inc Fraud Detection.
       </footer>
     </div>
   );
 }
 
-/* Components */
 
 

@@ -14,7 +14,7 @@ export default function Nav() {
           <Link to="/" className='flex gap-2 items-center'>
             <ShieldCheck size={28} className="text-orange-500" />
 
-            <h1 className="text-white">Axiom<span className="text-green-500">Vault</span></h1>
+            <h1 className="text-white">Axiom<span className="text-green-500">Vault</span> Inc</h1>
           </Link>
         </div>
 

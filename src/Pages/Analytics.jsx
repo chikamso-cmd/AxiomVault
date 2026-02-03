@@ -18,7 +18,7 @@ export default function Analytics() {
       <Nav />
 
       {/* Hero */}
-      <section className="max-w-7xl mx-auto px-4 py-14 text-center">
+      <section className="max-w-7xl mx-auto px-4 py-14 text-center md:pt-25 pt-26">
         <span className="inline-block mb-4 px-3 py-1 text-xs rounded-full bg-green-500/10 text-green-400">
           AI ADVANCED ANALYTICS DASHBOARD
         </span>
@@ -118,11 +118,10 @@ export default function Analytics() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
-        © 2026 FraudShield. Enterprise Fraud Detection.
+        © {new Date().getFullYear()} AxiomVault. inc Fraud Detection.
       </footer>
     </div>
   );
 }
 
-/* Components */
 
