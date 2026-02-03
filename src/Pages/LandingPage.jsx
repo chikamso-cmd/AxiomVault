@@ -1,7 +1,7 @@
 
 import { ShieldCheck, Activity, BarChart2, Radar, Menu, X } from "lucide-react";
 import Nav from "../components/Nav";
-
+import {Feature, Incident, Stats, Metric} from  '../components/ThreatsStats'
 
 export default function LandingPage() {
 
@@ -66,8 +66,8 @@ export default function LandingPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-4 mt-6 text-xs">
-              <Stat label="Response Time" value="0.34s" />
-              <Stat label="Detection Rate" value="99.7%" />
+              <Stats label="Response Time" value="0.34s" />
+              <Stats label="Detection Rate" value="99.7%" />
             </div>
           </div>
         </div>
@@ -144,39 +144,4 @@ export default function LandingPage() {
   );
 }
 
-function Feature({ icon, title, desc }) {
-  return (
-    <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-2xl p-6 text-left shadow-lg">
-      <div className="mb-4">{icon}</div>
-      <h3 className="font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-400">{desc}</p>
-    </div>
-  );
-}
 
-function Incident({ title, value }) {
-  return (
-    <div className="flex justify-between items-center">
-      <span className="text-gray-300">{title}</span>
-      <span className="text-red-400 font-medium">{value}</span>
-    </div>
-  );
-}
-
-function Stat({ label, value }) {
-  return (
-    <div className="bg-[#081733] rounded-lg p-3 text-center">
-      <p className="text-green-400 font-semibold">{value}</p>
-      <p className="text-gray-400 mt-1">{label}</p>
-    </div>
-  );
-}
-
-function Metric({ value, label }) {
-  return (
-    <div>
-      <p className="text-green-400 text-2xl font-bold mb-1">{value}</p>
-      <p className="text-gray-400 text-sm">{label}</p>
-    </div>
-  );
-}
