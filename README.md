@@ -1,4 +1,4 @@
-# AxiomVault - Enterprise Cybersecurity Platform
+# AxiomVault - Inc Cybersecurity Platform
 
 A modern, responsive enterprise cybersecurity solution built with React and Vite. FraudShield provides real-time threat detection, incident monitoring, and advanced analytics for enterprise-grade protection.
 
@@ -132,7 +132,9 @@ The application includes a responsive mobile sidebar navigation that:
 
 ## 📊 Components Overview
 
-### LandingPage.jsx
+### Page Components
+
+#### LandingPage.jsx
 
 - Hero section with call-to-action buttons
 - Active incidents monitoring card
@@ -141,17 +143,39 @@ The application includes a responsive mobile sidebar navigation that:
 - Mobile responsive sidebar navigation
 - Footer with branding
 
-### Nav.jsx
-
-- Navigation component (reusable)
-
-### Dashboard.jsx
+#### Dashboard.jsx
 
 - Main dashboard interface
+- Real-time threat monitoring display
 
-### Analytics.jsx
+#### Analytics.jsx
 
 - Analytics and reporting interface
+- Threat statistics and metrics
+
+### Reusable Components
+
+#### Nav.jsx
+
+- Navigation component for page layout
+
+#### ThreatsCard.jsx
+
+Exports reusable threat and method display components:
+
+**ThreatStat Component**
+
+- Displays threat statistics with customizable styling
+- Props: `icon`, `title`, `value`, `change`, `color`, `children`
+- Supports dynamic color themes (orange, yellow, red, pink)
+- Shows threat change percentage with badge
+
+**Method Component**
+
+- Displays security method information
+- Props: `icon`, `title`, `desc`
+- Features icon, title, and description layout
+- Used for threat prevention methods
 
 ## 🔐 Security
 
