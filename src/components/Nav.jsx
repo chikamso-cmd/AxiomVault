@@ -20,8 +20,8 @@ export default function Nav() {
 
         <div className="hidden md:flex gap-8 text-sm text-gray-300">
           <Link to="/dashboard">Dashboard</Link>
-          <Link to="#">Threats</Link>
-          <Link to="#">Analytics</Link>
+          <Link to="/threats">Threats</Link>
+          <Link to="/analytics">Analytics</Link>
           <Link to="#">Docs</Link>
         </div>
 
@@ -54,10 +54,10 @@ export default function Nav() {
             >
               Dashboard
             </Link>
-            <Link to="#" className="text-gray-300 hover:text-white transition">
+            <Link to="/threats" className="text-gray-300 hover:text-white transition">
               Threats
             </Link>
-            <Link to="#" className="text-gray-300 hover:text-white transition">
+            <Link to="/analytics" className="text-gray-300 hover:text-white transition">
               Analytics
             </Link>
             <Link to="#" className="text-gray-300 hover:text-white transition">

@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Shield,
   BarChart2,
   Clock,
   TrendingUp,
@@ -8,32 +7,15 @@ import {
   Globe,
   Smartphone,
 } from "lucide-react";
+import Nav from "../components/Nav";
+import { Stat, Insight } from "../components/ThreatsStats";
 
 export default function Analytics() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#050B24] via-[#0B1C46] to-[#081436] text-white">
       {/* Navbar */}
-      <header className="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
-        <div className="flex items-center gap-2 font-bold">
-          <Shield className="text-orange-500" />
-          FRAUDSHIELD
-        </div>
-
-        <nav className="hidden md:flex gap-8 text-sm text-gray-300">
-          <a href="#">Threats</a>
-          <a href="#" className="text-green-400">
-            Analytics
-          </a>
-          <a href="#">Docs</a>
-        </nav>
-
-        <div className="flex items-center gap-4">
-          <button className="text-sm text-gray-300">Sign In</button>
-          <button className="bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-lg text-sm font-medium">
-            Launch Console
-          </button>
-        </div>
-      </header>
+      
+      <Nav />
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 py-14 text-center">
@@ -144,47 +126,3 @@ export default function Analytics() {
 
 /* Components */
 
-function Stat({ icon, title, value, change }) {
-  const positive = !change.startsWith("-");
-
-  return (
-    <div className="bg-[#0B1F4A]/80 border border-white/10 rounded-xl p-4 text-left">
-      <div className="flex items-center gap-2 text-xs text-gray-400 mb-1">
-        {icon}
-        {title}
-      </div>
-
-      <div className="flex items-center justify-between">
-        <p className="text-xl font-bold">{value}</p>
-        <span
-          className={`text-xs px-2 py-0.5 rounded-full ${
-            positive
-              ? "bg-green-500/20 text-green-400"
-              : "bg-red-500/20 text-red-400"
-          }`}
-        >
-          {change}
-        </span>
-      </div>
-    </div>
-  );
-}
-
-function Insight({ icon, title, subtitle, value, gradient }) {
-  return (
-    <div
-      className={`bg-gradient-to-r ${gradient} rounded-2xl p-[1px] shadow-lg`}
-    >
-      <div className="bg-[#081733] rounded-2xl p-5 h-full">
-        <div className="flex items-center gap-2 text-sm mb-3 text-white">
-          {icon}
-          <span className="font-semibold">{title}</span>
-        </div>
-
-        <p className="text-xs text-gray-300 mb-4">{subtitle}</p>
-
-        <p className="text-lg font-bold text-white">{value}</p>
-      </div>
-    </div>
-  );
-}
