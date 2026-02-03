@@ -10,7 +10,30 @@ import {
   ScanFace,
 } from "lucide-react";
 import Nav from "../components/Nav";
-import {ThreatStat, Method} from "../components/ThreatsStats";
+import { ThreatStat, Method } from "../components/ThreatsStats";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function Threats() {
   return (
@@ -34,36 +57,52 @@ export default function Threats() {
         </p>
 
         {/* Threat Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <ThreatStat
-            icon={<CreditCard size={16} />}
-            title="Payment Card Fraud"
-            value="2,847"
-            change="-12%"
-            color="orange"
-          />
-          <ThreatStat
-            icon={<UserX size={16} />}
-            title="Account Takeover"
-            value="1,254"
-            change="-8%"
-            color="yellow"
-          />
-          <ThreatStat
-            icon={<Fingerprint size={16} />}
-            title="Identity Theft"
-            value="3,192"
-            change="-15%"
-            color="red"
-          />
-          <ThreatStat
-            icon={<AlertTriangle size={16} />}
-            title="Synthetic Fraud"
-            value="892"
-            change="-5%"
-            color="pink"
-          />
-        </div>
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+        >
+          <motion.div variants={itemVariants}>
+            <ThreatStat
+              icon={<CreditCard size={16} />}
+              title="Payment Card Fraud"
+              value="2,847"
+              change="-12%"
+              color="orange"
+            />
+          </motion.div>
+
+          <motion.div variants={itemVariants}>
+            <ThreatStat
+              icon={<UserX size={16} />}
+              title="Account Takeovers"
+              value="1,423"
+              change="-8%"
+              color="yellow"
+            />
+          </motion.div>
+
+          <motion.div variants={itemVariants}>
+            <ThreatStat
+              icon={<Fingerprint size={16} />}
+              title="Identity Theft"
+              value="3,192"
+              change="-15%"
+              color="red"
+            />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <ThreatStat
+              icon={<AlertTriangle size={16} />}
+              title="Synthetic Fraud"
+              value="892"
+              change="-5%"
+              color="pink"
+            />
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* Detection Methods */}
@@ -78,28 +117,43 @@ export default function Threats() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Method
-            icon={<Brain size={18} />}
-            title="ML-Based Detection"
-            desc="Advanced machine learning algorithms analyze transaction patterns in real-time"
-          />
-          <Method
-            icon={<Activity size={18} />}
-            title="Behavioral Analysis"
-            desc="Monitor user behavior and device fingerprints for anomalies"
-          />
-          <Method
-            icon={<Network size={18} />}
-            title="Network Intelligence"
-            desc="Global threat database with 99.9% accuracy detection rate"
-          />
-          <Method
-            icon={<ScanFace size={18} />}
-            title="Biometric Verification"
-            desc="Multi-factor authentication with facial recognition"
-          />
-        </div>
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+        >
+          <motion.div variants={itemVariants}>
+            <Method
+              icon={<Brain size={18} />}
+              title="ML-Based Detection"
+              desc="Advanced machine learning algorithms analyze transaction patterns in real-time"
+            />
+          </motion.div>
+
+          <motion.div variants={itemVariants}>
+            <Method
+              icon={<Activity size={18} />}
+              title="Behavioral Analysis"
+              desc="Monitor user behavior and device fingerprints for anomalies"
+            />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <Method
+              icon={<Network size={18} />}
+              title="Network Intelligence"
+              desc="Global threat database with 99.9% accuracy detection rate"
+            />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <Method
+              icon={<ScanFace size={18} />}
+              title="Biometric Verification"
+              desc="Multi-factor authentication with facial recognition"
+            />
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* CTA */}
@@ -123,6 +177,3 @@ export default function Threats() {
     </div>
   );
 }
-
-
-

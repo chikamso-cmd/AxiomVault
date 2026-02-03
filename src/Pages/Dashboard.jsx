@@ -15,6 +15,29 @@ import {
   StatusRow,
   Action,
 } from "../components/ThreatsStats";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function Dashboard() {
   return (
@@ -53,12 +76,26 @@ export default function Dashboard() {
         </div>
 
         {/* Stats */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-          <StatCard title="Incidents Detected" value="142" change="+23%" />
-          <StatCard title="Threats Blocked" value="50,847" change="+8.2%" />
-          <StatCard title="Detection Rate" value="99.7%" change="+0.2%" />
-          <StatCard title="Avg Response Time" value="340ms" change="-4.1%" />
-        </section>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6"
+        >
+          <motion.div variants={itemVariants}>
+              <StatCard title="Incidents Detected" value="142" change="+23%" />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+              <StatCard title="Threats Blocked" value="50,847" change="+8.2%" />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+              <StatCard title="Detection Rate" value="99.7%" change="+0.2%" />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+              <StatCard title="Avg Response Time" value="340ms" change="-4.1%" />
+          </motion.div>
+        </motion.div>
 
         {/* Content Grid */}
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -94,38 +131,54 @@ function ActiveThreats() {
         </span>
       </div>
 
-      <div className="space-y-3 text-sm">
-        <Threat
-          level="critical"
-          title="DDoS Attack Detected"
-          meta="2 minutes ago"
-          blocked="245,000"
-        />
-        <Threat
-          level="high"
-          title="Unusual Login Pattern"
-          meta="15 minutes ago"
-          blocked="3,400"
-        />
-        <Threat
-          level="high"
-          title="Credential Stuffing Attempt"
-          meta="32 minutes ago"
-          blocked="1,240"
-        />
-        <Threat
-          level="medium"
-          title="SQL Injection Attempt"
-          meta="1 hour ago"
-          blocked="145"
-        />
-        <Threat
-          level="low"
-          title="Rate Limit Exceeded"
-          meta="2 hours ago"
-          blocked="56"
-        />
-      </div>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="space-y-3 text-sm"
+      >
+        <motion.div variants={itemVariants}>
+          <Threat
+            level="critical"
+            title="DDoS Attack Detected"
+            meta="2 minutes ago"
+            blocked="245,000"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+            <Threat
+              level="high"
+              title="Unusual Login Pattern"
+              meta="15 minutes ago"
+              blocked="3,400"
+            />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+            <Threat
+              level="high"
+              title="Credential Stuffing Attempt"
+              meta="32 minutes ago"
+              blocked="1,240"
+            />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+            <Threat
+              level="medium"
+              title="SQL Injection Attempt"
+              meta="1 hour ago"
+              blocked="145"
+            />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+            <Threat
+              level="low"
+              title="Rate Limit Exceeded"
+              meta="2 hours ago"
+              blocked="56"
+            />
+        </motion.div>
+      </motion.div>
 
       <button className="w-full mt-4 py-2 border border-green-500/30 text-green-400 rounded-lg text-sm hover:bg-green-500/10">
         View All Threats →
@@ -137,32 +190,50 @@ function ActiveThreats() {
 
 function Timeline() {
   return (
-    <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="show"
+      exit="hidden"
+      className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4"
+    >
       <h3 className="font-semibold mb-4 flex items-center gap-2">
         <Activity size={16} className="text-blue-400" /> Incident Timeline
       </h3>
 
-      <div className="space-y-4 text-sm">
-        <TimelineItem
-          time="14:32"
-          title="DDoS Attack Initiated"
-          status="MITIGATED"
-          color="red"
-        />
-        <TimelineItem
-          time="14:28"
-          title="Credential Stuffing Detected"
-          status="BLOCKED"
-          color="orange"
-        />
-        <TimelineItem
-          time="14:15"
-          title="System Health Check"
-          status="NORMAL"
-          color="green"
-        />
-      </div>
-    </div>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="space-y-4 text-sm"
+      >
+        <motion.div variants={itemVariants}>
+          <TimelineItem
+            time="14:32"
+            title="DDoS Attack Initiated"
+            status="MITIGATED"
+            color="red"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+          <TimelineItem
+            time="14:28"
+            title="Credential Stuffing Detected"
+            status="BLOCKED"
+            color="orange"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants}>
+          <TimelineItem
+            time="14:15"
+            title="System Health Check"
+            status="NORMAL"
+            color="green"
+          />
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }
 
