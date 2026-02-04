@@ -95,7 +95,7 @@ export default function Nav() {
               Analytics
             </Link>
             <Link
-              to="about"
+              to="/about"
               className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
             >
               About us
