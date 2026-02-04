@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Shield, Users, Target, Globe } from "lucide-react";
-import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 export default function AboutUs() {
   return (
@@ -10,7 +10,7 @@ export default function AboutUs() {
       <Nav />
 
       {/* Hero */}
-      <section className="max-w-7xl mx-auto px-6 pt-40 pb-24 text-center">
+      <section className="max-w-7xl mx-auto px-6 pt-35 pb-24 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -129,6 +129,142 @@ export default function AboutUs() {
             <div key={i}>
               <p className="text-3xl font-bold text-orange-500">{stat.value}</p>
               <p className="text-gray-400 text-sm mt-1">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Our Story */}
+      <section className="max-w-7xl mx-auto px-6 pb-24">
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-white/5 backdrop-blur rounded-2xl p-10"
+        >
+          <h3 className="text-3xl font-bold mb-4 text-center">Our Story</h3>
+          <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+            et fugiat architecto eius pariatur nisi ab minus? Eum hic
+            praesentium voluptatem officia quasi dolorem eius, dolore nemo
+            doloremque beatae, architecto animi, aspernatur fuga. Cum nostrum
+            quis et sunt qui recusandae ipsa rerum consequuntur omnis autem quam
+            aliquam, temporibus corrupti assumenda.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* What We Do */}
+      <section className="max-w-7xl mx-auto px-6 pb-24">
+        <h3 className="text-3xl font-bold text-center mb-12">What We Do</h3>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {[
+            {
+              title: "Fraud Detection & Prevention",
+              desc: "We analyze millions of transactions in real time to identify suspicious patterns, prevent unauthorized access, and reduce financial losses.",
+            },
+            {
+              title: "Cybersecurity Monitoring",
+              desc: "Our platform continuously monitors systems and networks, providing early warnings and automated responses to emerging threats.",
+            },
+            {
+              title: "Risk Intelligence",
+              desc: "We transform complex security data into actionable insights, helping organizations make informed decisions.",
+            },
+            {
+              title: "Compliance & Reporting",
+              desc: "Our tools simplify regulatory compliance with automated reports, audit trails, and industry-standard controls.",
+            },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white/5 backdrop-blur rounded-xl p-8"
+            >
+              <h4 className="text-xl font-semibold mb-3 text-orange-500">
+                {item.title}
+              </h4>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {item.desc}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Technology */}
+      <section className="max-w-7xl mx-auto px-6 pb-24">
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-white/5 to-white/10 rounded-2xl p-10"
+        >
+          <h3 className="text-3xl font-bold mb-6 text-center">
+            Our Technology
+          </h3>
+
+          <p className="text-gray-300 max-w-4xl mx-auto text-center leading-relaxed">
+            AxiomVault is powered by advanced machine learning, behavioral
+            analytics, and cloud-native infrastructure. Our intelligent engines
+            adapt to new attack patterns, learn from historical data, and
+            continuously improve accuracy. This ensures our clients stay
+            protected against both known and unknown threats.
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            {[
+              "AI-Powered Detection",
+              "Real-Time Processing",
+              "Cloud Scalability",
+              "Zero-Trust Architecture",
+              "Encrypted Data Pipelines",
+              "Automated Incident Response",
+            ].map((tech, i) => (
+              <div
+                key={i}
+                className="bg-white/5 rounded-lg p-4 text-center text-sm text-gray-300"
+              >
+                {tech}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Leadership & Culture */}
+      <section className="max-w-7xl mx-auto px-6 pb-24">
+        <h3 className="text-3xl font-bold text-center mb-10">
+          Leadership & Culture
+        </h3>
+
+        <p className="text-gray-300 max-w-3xl mx-auto text-center leading-relaxed">
+          Our leadership team brings together experts in cybersecurity, data
+          science, finance, and software engineering. At AxiomVault, we foster a
+          culture of transparency, collaboration, and continuous learning. We
+          believe that strong teams build strong security.
+        </p>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          {[
+            "Integrity & Accountability",
+            "Diversity & Inclusion",
+            "Customer-Centric Thinking",
+            "Continuous Innovation",
+            "Global Collaboration",
+            "Ethical Technology",
+          ].map((value, i) => (
+            <div
+              key={i}
+              className="bg-white/5 rounded-xl p-6 text-center text-sm text-gray-300"
+            >
+              {value}
             </div>
           ))}
         </div>

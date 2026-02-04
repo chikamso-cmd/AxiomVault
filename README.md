@@ -1,75 +1,84 @@
-# AxiomVault - Inc Cybersecurity Platform
+# AxiomVault Inc - Cybersecurity Platform
 
-A modern, responsive enterprise cybersecurity solution built with React and Vite. FraudShield provides real-time threat detection, incident monitoring, and advanced analytics for enterprise-grade protection.
+A modern, responsive enterprise cybersecurity UI built with React and Vite. AxiomVault showcases real-time monitoring, threat intelligence, and analytics dashboards with a clean, premium interface.
 
-## ✨ Features
+## Features
 
-- **Real-Time Threat Monitoring**: Live detection and response to security incidents
-- **Risk Scoring**: AI-powered risk assessment for instant threat evaluation
-- **Threat Intelligence**: Global threat feeds and exploit detection
-- **Responsive Design**: Fully responsive with mobile sidebar navigation
-- **Modern UI**: Built with Tailwind CSS v4 for a sleek, professional interface
-- **Analytics Dashboard**: Comprehensive security metrics and visualization
-- **Enterprise Support**: 24/7 monitoring and incident response
+- Real-time threat monitoring and incident visibility
+- Threats, analytics, and dashboard views
+- About Us and Contact pages for product story and outreach
+- Responsive navigation with mobile sidebar
+- Modern UI built with Tailwind CSS v4
+- Reusable stat and insight cards across pages
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 
-- **React** 19.2.0 - UI library with modern hooks
-- **Vite** 7.2.4 - Lightning-fast build tool with HMR
-- **Tailwind CSS** 4.1.18 - Utility-first CSS framework
-- **Lucide React** 0.563.0 - Beautifully crafted icon library
-- **React Router DOM** 7.13.0 - Client-side routing
+- React 19.2.0
+- Vite 7.2.4
+- Tailwind CSS 4.1.18 (via `@tailwindcss/vite`)
+- React Router DOM 7.13.0
+- Lucide React 0.563.0
+- Framer Motion 12.30.0
+- React Icons 5.5.0
 
-### Animation & Interactions
+### Development
 
-- **Framer Motion** 12.30.0 - Advanced animation library
-- **React Icons** 5.5.0 - Icon collection
+- ESLint 9.39.1
+- Vite SWC Plugin 4.2.2
+- Node.js
 
-### Development Tools
+## Routes
 
-- **ESLint** 9.39.1 - Code quality and style enforcement
-- **Vite SWC Plugin** 4.2.2 - Fast JavaScript/TypeScript compiler
-- **Node.js** - JavaScript runtime
+- `/` - Landing page
+- `/dashboard` - Main dashboard
+- `/threats` - Threat intelligence view
+- `/analytics` - Analytics and reporting
+- `/about` - About AxiomVault
+- `/contact` - Contact page
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 AxiomVault/
-├── public/                 # Static assets
-├── src/
-│   ├── components/        # Reusable React components
-│   │   └── Nav.jsx       # Navigation component
-│   ├── Pages/            # Page components
-│   │   ├── LandingPage.jsx    # Home page with mobile sidebar
-│   │   ├── Dashboard.jsx       # Main dashboard
-│   │   └── Analytics.jsx       # Analytics dashboard
-│   ├── assets/           # Images, fonts, and other assets
-│   ├── App.jsx           # Root application component
-│   ├── App.css           # Application styles
-│   ├── index.css         # Global styles
-│   └── main.jsx          # Application entry point
-├── index.html            # HTML template
-├── package.json          # Project dependencies
-├── vite.config.js        # Vite configuration
-├── eslint.config.js      # ESLint rules
-└── README.md             # This file
+|-- public/                 # Static assets
+|-- src/
+|   |-- components/         # Reusable React components
+|   |   |-- Nav.jsx         # Sticky navigation + mobile menu
+|   |   |-- Footer.jsx      # Footer links + contact info
+|   |   `-- ThreatsStats.jsx # Shared stat, insight, and card components
+|   |-- Pages/              # Route-level pages
+|   |   |-- LandingPage.jsx
+|   |   |-- Dashboard.jsx
+|   |   |-- Threats.jsx
+|   |   |-- Analytics.jsx
+|   |   |-- AboutUs.jsx
+|   |   `-- Contact.jsx
+|   |-- App.jsx             # Routes
+|   |-- App.css             # App styles
+|   |-- index.css           # Global styles
+|   `-- main.jsx            # Entry point
+|-- index.html              # HTML template
+|-- package.json            # Project dependencies
+|-- vite.config.js          # Vite configuration
+|-- eslint.config.js        # ESLint rules
+`-- README.md               # This file
 ```
 
-## 🔧 Getting Started
+## Getting Started
 
 ### Prerequisites
 
 - Node.js 16+ installed
-- npm or yarn package manager
+- npm package manager
 
 ### Installation
 
 1. Clone the repository
 
 ```bash
-git clone <https://github.com/chikamso-cmd/AxiomVaultl>
+git clone <your-repo-url>
 cd AxiomVault
 ```
 
@@ -81,17 +90,15 @@ npm install
 
 ### Development
 
-Start the development server with hot module reloading:
+Start the dev server with HMR:
 
 ```bash
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
+The app runs at `http://localhost:5173`.
 
 ### Build
-
-Build for production:
 
 ```bash
 npm run build
@@ -99,97 +106,26 @@ npm run build
 
 ### Preview
 
-Preview the production build locally:
-
 ```bash
 npm run preview
 ```
 
-### Linting
-
-Check code quality:
+### Lint
 
 ```bash
 npm run lint
 ```
 
-## 📱 Mobile Features
+## Design Notes
 
-The application includes a responsive mobile sidebar navigation that:
+- Dark blue gradient background with orange and green accents
+- Mobile-first layout with a collapsible sidebar menu
+- Consistent spacing and card layouts for stats and insights
 
-- **Hamburger Toggle**: Click the menu icon on mobile devices to open/close the sidebar
-- **Mobile Links**: Access all navigation links (Threats, Analytics, Docs)
-- **Launch Console Button**: Conveniently placed in the mobile menu
-- **Responsive Breakpoints**: Desktop menu hidden on mobile, mobile menu hidden on desktop (md breakpoint)
-
-## 🎨 Design System
-
-- **Color Scheme**: Dark blue gradient background with orange accents
-- **Typography**: Clean, modern sans-serif fonts
-- **Spacing**: Consistent padding and margins using Tailwind spacing scale
-- **Icons**: Lucide React for consistent icon styling
-- **Responsiveness**: Mobile-first approach with Tailwind breakpoints
-
-## 📊 Components Overview
-
-### Page Components
-
-#### LandingPage.jsx
-
-- Hero section with call-to-action buttons
-- Active incidents monitoring card
-- Enterprise security features showcase
-- Real-time statistics section
-- Mobile responsive sidebar navigation
-- Footer with branding
-
-#### Dashboard.jsx
-
-- Main dashboard interface
-- Real-time threat monitoring display
-
-#### Analytics.jsx
-
-- Analytics and reporting interface
-- Threat statistics and metrics
-
-### Reusable Components
-
-#### Nav.jsx
-
-- Navigation component for page layout
-
-#### ThreatsCard.jsx
-
-Exports reusable threat and method display components:
-
-**ThreatStat Component**
-
-- Displays threat statistics with customizable styling
-- Props: `icon`, `title`, `value`, `change`, `color`, `children`
-- Supports dynamic color themes (orange, yellow, red, pink)
-- Shows threat change percentage with badge
-
-**Method Component**
-
-- Displays security method information
-- Props: `icon`, `title`, `desc`
-- Features icon, title, and description layout
-- Used for threat prevention methods
-
-## 🔐 Security
-
-This project is designed as an enterprise cybersecurity platform with:
-
-- Real-time threat detection
-- Incident monitoring and response
-- Risk scoring and assessment
-- Global threat intelligence integration
-
-## 📝 License
+## License
 
 Please see LICENSE file for details.
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome. Please feel free to submit a Pull Request.
