@@ -78,8 +78,12 @@ AxiomVault/
 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/chikamso-cmd/AxiomVault>
 cd AxiomVault
+```
+```demo link
+git clone <https://axiomvault-inc.netlify.app>
+AxiomVault
 ```
 
 2. Install dependencies
