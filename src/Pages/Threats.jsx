@@ -12,6 +12,7 @@ import {
 import Nav from "../components/Nav";
 import { ThreatStat, Method } from "../components/ThreatsStats";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -172,7 +173,7 @@ export default function Threats() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} AxiomVault. inc Fraud Detection.
+     <Footer />
       </footer>
     </div>
   );

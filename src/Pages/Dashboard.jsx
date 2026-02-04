@@ -15,6 +15,7 @@ import {
   StatusRow,
   Action,
 } from "../components/ThreatsStats";
+import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
 const containerVariants = {

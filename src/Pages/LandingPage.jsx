@@ -2,6 +2,31 @@
 import { ShieldCheck, Activity, BarChart2, Radar, Menu, X } from "lucide-react";
 import Nav from "../components/Nav";
 import {Feature, Incident, Stats, Metric} from  '../components/ThreatsStats'
+import { motion } from "framer-motion";
+import Footer from "../components/Footer";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 
 export default function LandingPage() {
 
@@ -13,44 +38,64 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left */}
-        <div>
-          <span className="inline-block bg-green-500/10 text-green-400 text-xs px-3 py-1 rounded-full mb-4">
-            REAL-TIME THREAT INTELLIGENCE
-          </span>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+        >
+          <motion.div variants={itemVariants}>
+            <span className="inline-block bg-green-500/10 text-green-400 text-xs px-3 py-1 rounded-full mb-4">
+              REAL-TIME THREAT INTELLIGENCE
+            </span>
+          </motion.div>
 
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-            Enterprise <br />
-            <span className="text-orange-500">Cyber Defense</span>
-          </h1>
+          <motion.div variants={itemVariants}>
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+              Enterprise <br />
+              <span className="text-orange-500">Cyber Defense</span>
+            </h1>
+          </motion.div>
 
-          <p className="text-gray-300 max-w-lg mb-8">
-            Real-time threat detection powered by AI. Stop fraud before it
-            happens. Protect your enterprise with military-grade security and
-            instant incident response.
-          </p>
+          <motion.div variants={itemVariants}>
+            <p className="text-gray-300 max-w-lg mb-8">
+              Real-time threat detection powered by AI. Stop fraud before it
+              happens. Protect your enterprise with military-grade security and
+              instant incident response.
+            </p>
+          </motion.div>
 
-          <div className="flex flex-wrap gap-4">
-            <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
-              Access Command Center →
-            </button>
-
-            <button className="border border-green-500 hover:border-white transition px-6 py-3 rounded-lg font-medium">
-              View Demo
-            </button>
-          </div>
-
-          <div className="flex items-center gap-3 mt-8 text-sm text-gray-400">
-            <div className="flex -space-x-2">
-              <div className="w-6 h-6 rounded-full bg-orange-500" />
-              <div className="w-6 h-6 rounded-full bg-orange-400" />
-              <div className="w-6 h-6 rounded-full bg-orange-300" />
+          <motion.div variants={itemVariants}>
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
+                Access Command Center →
+              </button>
+              <button className="border border-green-500 hover:border-white transition px-6 py-3 rounded-lg font-medium">
+                View Demo
+              </button>
             </div>
-            <span>50k+ threats blocked daily</span>
-          </div>
-        </div>
+          </motion.div>
+
+          <motion.div variants={itemVariants}>
+            <div className="flex items-center gap-3 mt-8 text-sm text-gray-400">
+              <div className="flex -space-x-2">
+                <div className="w-6 h-6 rounded-full bg-orange-500" />
+                <div className="w-6 h-6 rounded-full bg-orange-400" />
+                <div className="w-6 h-6 rounded-full bg-orange-300" />
+              </div>
+              <span>50k+ threats blocked daily</span>
+            </div>
+          </motion.div>
+        </motion.div>
 
         {/* Right Card */}
-        <div className="relative">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="relative"
+        >
           <div className="bg-[#0B1F4A]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl max-w-md mx-auto">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-sm font-semibold text-green-400">
@@ -70,11 +115,17 @@ export default function LandingPage() {
               <Stats label="Detection Rate" value="99.7%" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Features */}
-      <section className="max-w-7xl mx-auto px-6 py-20 text-center">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="max-w-7xl mx-auto px-6 py-20 text-center"
+      >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Enterprise Security Features
         </h2>
@@ -84,33 +135,53 @@ export default function LandingPage() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Feature
-            icon={<Activity className="text-green-400" />}
-            title="Real-Time Monitoring"
-            desc="Watch every transaction in real-time. Detect anomalies instantly."
-          />
-          <Feature
-            icon={<BarChart2 className="text-green-400" />}
-            title="Risk Scoring"
-            desc="AI-powered risk scoring. Know your threat level at a glance."
-          />
-          <Feature
-            icon={<Radar className="text-green-400" />}
-            title="Threat Intelligence"
-            desc="Global threat feeds. Exploit detection. Always ahead."
-          />
+          <motion.div variants={itemVariants}>
+            <Feature
+              icon={<Activity className="text-green-400" />}
+              title="Real-Time Monitoring"
+              desc="Watch every transaction in real-time. Detect anomalies instantly."
+            />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <Feature
+              icon={<BarChart2 className="text-green-400" />}
+              title="Risk Scoring"
+              desc="AI-powered risk scoring. Know your threat level at a glance."
+            />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <Feature
+              icon={<Radar className="text-green-400" />}
+              title="Threat Intelligence"
+              desc="Global threat feeds. Exploit detection. Always ahead."
+            />
+          </motion.div>
         </div>
-      </section>
+      </motion.div>
 
       {/* Stats */}
-      <section className="bg-[#07142F] py-12">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="bg-[#07142F] py-12"
+      >
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <Metric value="50K+" label="Threats Blocked Daily" />
-          <Metric value="0.34s" label="Average Response Time" />
-          <Metric value="99.7%" label="Detection Rate" />
-          <Metric value="24/7" label="Enterprise Support" />
+          <motion.div variants={itemVariants}>
+            <Metric value="50K+" label="Threats Blocked Daily" />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <Metric value="0.34s" label="Average Response Time" />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <Metric value="99.7%" label="Detection Rate" />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <Metric value="24/7" label="Enterprise Support" />
+          </motion.div>
         </div>
-      </section>
+      </motion.div>
 
       {/* CTA */}
       <section className="text-center py-20 px-6">
@@ -130,14 +201,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-sm text-gray-500">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2 text-green-500 font-bold">
-            <ShieldCheck size={16} className="text-green-500" />
-            AxiomVault
-          </div>
-
-          <p>
-            © {new Date().getFullYear()} AxiomVault. Inc Cybersecurity.
-          </p>
+          <Footer />
         </div>
       </footer>
     </div>

@@ -11,18 +11,46 @@ export default function Nav() {
     <section className="w-full fixed top-0 left-0 z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5 sticky top-0 bg-[#0B1C46]/80 backdrop-blur-md border-b border-white/10 z-50">
         <div className="flex items-center gap-2 font-bold text-lg">
-          <Link to="/" className='flex gap-2 items-center'>
+          <Link to="/" className="flex gap-2 items-center">
             <ShieldCheck size={28} className="text-orange-500" />
 
-            <h1 className="text-white">Axiom<span className="text-green-500">Vault</span> Inc</h1>
+            <h1 className="text-white">
+              Axiom<span className="text-green-500">Vault</span> Inc
+            </h1>
           </Link>
         </div>
 
         <div className="hidden md:flex gap-8 text-sm text-gray-300">
-          <Link to="/dashboard">Dashboard</Link>
-          <Link to="/threats">Threats</Link>
-          <Link to="/analytics">Analytics</Link>
-          <Link to="#">Docs</Link>
+          <Link
+            to="/dashboard"
+            className="hover:text-green-500 transition-colors duration-300 font-bold"
+          >
+            Dashboard
+          </Link>
+          <Link
+            to="/threats"
+            className="hover:text-green-500 transition-colors duration-300 font-bold"
+          >
+            Threats
+          </Link>
+          <Link
+            to="/analytics"
+            className="hover:text-green-500 transition-colors duration-300 font-bold"
+          >
+            Analytics
+          </Link>
+          <Link
+            to="#"
+            className="hover:text-green-500 transition-colors duration-300 font-bold"
+          >
+            About us
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:text-green-500 transition-colors duration-300 font-bold"
+          >
+            Contact
+          </Link>
         </div>
 
         <div className="flex items-center gap-4">
@@ -50,18 +78,33 @@ export default function Nav() {
           <div className="flex flex-col gap-4">
             <Link
               to="/dashboard"
-              className="text-gray-300 hover:text-white transition"
+              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
             >
               Dashboard
             </Link>
-            <Link to="/threats" className="text-gray-300 hover:text-white transition">
+            <Link
+              to="/threats"
+              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+            >
               Threats
             </Link>
-            <Link to="/analytics" className="text-gray-300 hover:text-white transition">
+            <Link
+              to="/analytics"
+              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+            >
               Analytics
             </Link>
-            <Link to="#" className="text-gray-300 hover:text-white transition">
-              Docs
+            <Link
+              to="#"
+              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+            >
+              About us
+            </Link>
+            <Link
+              to="/contact"
+              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+            >
+              Contact
             </Link>
             <button className="bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-lg text-sm font-medium w-full">
               Launch Console
