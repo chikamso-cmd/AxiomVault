@@ -21,7 +21,7 @@ export default function Footer() {
           <h2 className="font-bold text-[20px] pb-5 text-white">Quick Links</h2>
           <ul className="space-y-2 text-[16px]">
             <Link
-              to="#"
+              to="/about"
               className="hover:text-white transition-colors duration-300"
             >
               <li>About us</li>
