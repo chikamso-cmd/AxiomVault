@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import { ShieldCheck, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import LOGO from '../assets/LOGO.png'
 
 
 
@@ -12,11 +13,12 @@ export default function Nav() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5 sticky top-0 bg-[#0B1C46]/80 backdrop-blur-md border-b border-white/10 z-50">
         <div className="flex items-center gap-2 font-bold text-lg">
           <Link to="/" className="flex gap-2 items-center">
-            <ShieldCheck size={28} className="text-orange-500" />
+            {/* <ShieldCheck size={28} className="text-orange-500" />
 
             <h1 className="text-white text-[25px]">
               Axiom<span className="text-green-500">Vault</span> Inc
-            </h1>
+            </h1> */}
+            <img src={LOGO} alt="AxiomVault Inc logo" className='w-40 ' />
           </Link>
         </div>
 

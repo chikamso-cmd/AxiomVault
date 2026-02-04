@@ -1,17 +1,19 @@
 import React from 'react'
 import {ShieldCheck, Mail, Phone, MapPin} from 'lucide-react'
 import {Link} from "react-router-dom"
+import LOGO from '../assets/LOGO.png'
 
 export default function Footer() {
   return (
     <section className="py-6 text-sm text-gray-500">
       <div className=" border-b border-white/10 max-w-7xl pb-5 mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-5">
         <div className="flex flex-col gap-2">
-          <h1 className="flex items-center gap-2 font-bold text-[20px] text-white">
+          {/* <h1 className="flex items-center gap-2 font-bold text-[20px] text-white">
             {" "}
             <ShieldCheck size={16} className="font-bold" />
             AxiomVault
-          </h1>
+          </h1> */}
+           <img src={LOGO} alt="AxiomVault Inc logo" className='w-40 ' />
           <p className="pt-5 font-medium text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             eaque distinctio at, praesentium id sit?
