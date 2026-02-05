@@ -11,6 +11,7 @@ import Nav from "../components/Nav";
 import { Stat, Insight } from "../components/ThreatsStats";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import {Link} from "react-router-dom"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -42,12 +43,12 @@ export default function Analytics() {
       <Nav />
 
       {/* Hero */}
-      <section className="max-w-7xl mx-auto px-4 py-14 text-center md:pt-25 pt-26">
-        <span className="inline-block mb-4 px-3 py-1 text-xs rounded-full bg-green-500/10 text-green-400">
+      <section className="max-w-7xl mx-auto px-4 py-14 text-center md:pt-35 pt-26">
+        <span className="inline-block mb-4 px-3 py-1 text-xs rounded-full bg-green-500/10 text-axiom-red">
           AI ADVANCED ANALYTICS DASHBOARD
         </span>
 
-        <h1 className="text-3xl md:text-5xl font-bold text-cyan-400 mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-axiom-red mb-4">
           Fraud Analytics
         </h1>
 
@@ -163,9 +164,11 @@ export default function Analytics() {
           Get detailed analytics, custom reports, and real-time dashboards
         </p>
 
-        <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
-          Open Analytics Dashboard →
-        </button>
+        <Link to="/dashboard">
+          <button className="bg-axiom-red hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
+            Open Analytics Dashboard →
+          </button>
+        </Link>
       </section>
 
       {/* Footer */}

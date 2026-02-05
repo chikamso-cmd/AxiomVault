@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Shield, Users, Target, Globe } from "lucide-react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import {Link} from "react-router-dom"
 
 export default function AboutUs() {
   return (
@@ -41,7 +42,7 @@ export default function AboutUs() {
           viewport={{ once: true }}
           className="bg-white/5 backdrop-blur rounded-2xl p-8"
         >
-          <Target className="text-orange-500 mb-4" />
+          <Target className="text-axiom-red mb-4" />
           <h3 className="text-2xl font-semibold mb-3">Our Mission</h3>
           <p className="text-gray-300 leading-relaxed">
             To empower businesses with intelligent security systems that detect,
@@ -56,7 +57,7 @@ export default function AboutUs() {
           viewport={{ once: true }}
           className="bg-white/5 backdrop-blur rounded-2xl p-8"
         >
-          <Globe className="text-orange-500 mb-4" />
+          <Globe className="text-axiom-red mb-4" />
           <h3 className="text-2xl font-semibold mb-3">Our Vision</h3>
           <p className="text-gray-300 leading-relaxed">
             To become the global standard for digital security and fraud
@@ -97,7 +98,7 @@ export default function AboutUs() {
               viewport={{ once: true }}
               className="bg-white/5 backdrop-blur rounded-xl p-6"
             >
-              <div className="text-orange-500 mb-3">{item.icon}</div>
+              <div className="text-axiom-red mb-3">{item.icon}</div>
               <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
               <p className="text-gray-300 text-sm">{item.desc}</p>
             </motion.div>
@@ -127,7 +128,7 @@ export default function AboutUs() {
             },
           ].map((stat, i) => (
             <div key={i}>
-              <p className="text-3xl font-bold text-orange-500">{stat.value}</p>
+              <p className="text-3xl font-bold text-axiom-red">{stat.value}</p>
               <p className="text-gray-400 text-sm mt-1">{stat.label}</p>
             </div>
           ))}
@@ -186,7 +187,7 @@ export default function AboutUs() {
               viewport={{ once: true }}
               className="bg-white/5 backdrop-blur rounded-xl p-8"
             >
-              <h4 className="text-xl font-semibold mb-3 text-orange-500">
+              <h4 className="text-xl font-semibold mb-3 text-axiom-red">
                 {item.title}
               </h4>
               <p className="text-gray-300 text-sm leading-relaxed">
@@ -229,7 +230,7 @@ export default function AboutUs() {
             ].map((tech, i) => (
               <div
                 key={i}
-                className="bg-white/5 rounded-lg p-4 text-center text-sm text-gray-300"
+                className="bg-white/5 rounded-lg p-4 text-center text-sm text-gray-300 hover:bg-axiom-red transition-all duration-500 hover:scale-105 ease-in-out hover:font-bold"
               >
                 {tech}
               </div>
@@ -262,7 +263,7 @@ export default function AboutUs() {
           ].map((value, i) => (
             <div
               key={i}
-              className="bg-white/5 rounded-xl p-6 text-center text-sm text-gray-300"
+              className="bg-white/5 rounded-xl p-6 text-center text-sm text-gray-300 hover:bg-axiom-red transition-all duration-500 hover:scale-105 ease-in-out"
             >
               {value}
             </div>
@@ -285,9 +286,11 @@ export default function AboutUs() {
             our intelligent security platform.
           </p>
 
-          <button className="bg-white text-orange-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
-            Contact Our Team
-          </button>
+          <Link to="/contact">
+            <button className="bg-white text-axiom-red font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+              Contact Our Team
+            </button>
+          </Link>
         </motion.div>
       </section>
 

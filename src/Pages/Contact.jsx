@@ -34,7 +34,7 @@ export default function ContactPage() {
           className="text-center mb-16 pt-20"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Contact <span className="text-orange-500">Axiom Vault</span>
+            Contact <span className="text-axiom-red">Axiom Vault</span>
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Have questions, feedback, or need support? Our team is ready to help
@@ -61,7 +61,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-orange-500/10 text-orange-400">
+                <div className="p-3 rounded-xl bg-axiom-red/10 text-orange-400">
                   <Mail size={20} />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-orange-500/10 text-orange-400">
+                <div className="p-3 rounded-xl bg-axiom-red/10 text-orange-400">
                   <Phone size={20} />
                 </div>
                 <div>
@@ -81,7 +81,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-orange-500/10 text-orange-400">
+                <div className="p-3 rounded-xl bg-axiom-red/10 text-orange-400">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your name"
-                  className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-axiom-red"
                 />
               </div>
 
@@ -128,7 +128,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter your email"
-                  className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-axiom-red"
                 />
               </div>
 
@@ -143,13 +143,13 @@ export default function ContactPage() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Tell us how we can help you..."
-                  className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-axiom-red resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 transition rounded-xl py-3 font-medium shadow-lg"
+                className="w-full flex items-center justify-center gap-2 bg-axiom-red hover:bg-orange-600 transition rounded-xl py-3 font-medium shadow-lg"
               >
                 <Send size={18} />
                 Send Message
@@ -160,7 +160,7 @@ export default function ContactPage() {
 
         {/* Footer */}
         <div className="text-center mt-20 text-gray-500 text-sm">
-        <Footer />
+          <Footer />
         </div>
       </div>
     </div>

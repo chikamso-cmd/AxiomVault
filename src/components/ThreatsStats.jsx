@@ -53,7 +53,7 @@ export const Stat = ({ icon, title, value, change }) => {
         <span
           className={`text-xs px-2 py-0.5 rounded-full ${
             positive
-              ? "bg-green-500/20 text-green-400"
+              ? "bg-green-500/20 text-axiom-red"
               : "bg-red-500/20 text-red-400"
           }`}
         >
@@ -68,7 +68,7 @@ export const Stat = ({ icon, title, value, change }) => {
 export const Insight = ({ icon, title, subtitle, value, gradient }) => {
   return (
     <div
-      className={`bg-gradient-to-r ${gradient} rounded-2xl p-[1px] shadow-lg`}
+      className={`bg-gradient-to-r ${gradient} rounded-2xl p-[1px] shadow-lg hover:scale-105 transition-all duration-500 ease-in-out`}
     >
       <div className={`bg-gradient-to-r ${gradient} rounded-2xl p-5 h-full`}>
         <div className="flex items-center gap-2 text-sm mb-3 text-white">
@@ -91,7 +91,7 @@ export const Threat = ({ level, title, meta, blocked }) =>  {
     critical: "from-red-600/30 to-red-500/10 text-red-400",
     high: "from-orange-500/30 to-orange-400/10 text-orange-400",
     medium: "from-yellow-500/30 to-yellow-400/10 text-yellow-400",
-    low: "from-green-500/30 to-green-400/10 text-green-400",
+    low: "from-green-500/30 to-green-400/10 text-axiom-red",
   };
 
   return (
@@ -112,7 +112,7 @@ export const TimelineItem = ({ time, title, status, color }) =>  {
   const map = {
     red: "text-red-400 bg-red-500/20",
     orange: "text-orange-400 bg-orange-500/20",
-    green: "text-green-400 bg-green-500/20",
+    green: "text-axiom-red bg-green-500/20",
   };
 
   return (
@@ -143,7 +143,7 @@ export const StatCard = ({ title, value, change }) => {
         <span
           className={`text-xs px-2 py-0.5 rounded-full ${
             positive
-              ? "bg-green-500/20 text-green-400"
+              ? "bg-green-500/20 text-axiom-red"
               : "bg-red-500/20 text-red-400"
           }`}
         >
@@ -159,7 +159,7 @@ export const StatusRow = ({ label, value }) => {
   return (
     <div className="flex justify-between">
       <span className="text-gray-400">{label}</span>
-      <span className="text-green-400 font-medium">{value}</span>
+      <span className="text-axiom-red font-medium">{value}</span>
     </div>
   );
 }
@@ -173,7 +173,7 @@ export const Action = ({ icon, text }) => {
         {icon}
         {text}
       </span>
-      <span className="text-green-400">→</span>
+      <span className="text-white">→</span>
     </button>
   );
 }
@@ -203,7 +203,7 @@ export const Incident = ({ title, value }) =>  {
 export const Stats = ({ label, value }) => {
   return (
     <div className="bg-[#081733] rounded-lg p-3 text-center">
-      <p className="text-green-400 font-semibold">{value}</p>
+      <p className="text-axiom-red font-semibold">{value}</p>
       <p className="text-gray-400 mt-1">{label}</p>
     </div>
   );
@@ -212,7 +212,7 @@ export const Stats = ({ label, value }) => {
 export const Metric = ({ value, label }) => {
   return (
     <div>
-      <p className="text-green-400 text-2xl font-bold mb-1">{value}</p>
+      <p className="text-axiom-red text-2xl font-bold mb-1">{value}</p>
       <p className="text-gray-400 text-sm">{label}</p>
     </div>
   );

@@ -45,7 +45,7 @@ export default function LandingPage() {
           exit="hidden"
         >
           <motion.div variants={itemVariants}>
-            <span className="inline-block bg-green-500/10 text-green-400 text-xs px-3 py-1 rounded-full mb-4">
+            <span className="inline-block bg-green-500/10 text-axiom-red text-xs px-3 py-1 rounded-full mb-4">
               REAL-TIME THREAT INTELLIGENCE
             </span>
           </motion.div>
@@ -53,7 +53,7 @@ export default function LandingPage() {
           <motion.div variants={itemVariants}>
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-6">
               Enterprise <br />
-              <span className="text-orange-500">Cyber Defense</span>
+              <span className="text-axiom-red">Cyber Defense</span>
             </h1>
           </motion.div>
 
@@ -67,10 +67,10 @@ export default function LandingPage() {
 
           <motion.div variants={itemVariants}>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
+              <button className="bg-axiom-red hover:bg-axiom-red transition px-6 py-3 rounded-lg font-medium">
                 Access Command Center →
               </button>
-              <button className="border border-green-500 hover:border-white transition px-6 py-3 rounded-lg font-medium">
+              <button className="border border-gray-400 hover:border-white transition px-6 py-3 rounded-lg font-medium">
                 View Demo
               </button>
             </div>
@@ -98,7 +98,7 @@ export default function LandingPage() {
         >
           <div className="bg-[#0B1F4A]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl max-w-md mx-auto">
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-sm font-semibold text-green-400">
+              <h3 className="text-sm font-semibold axiom-red">
                 ACTIVE INCIDENTS
               </h3>
               <span className="w-2 h-2 bg-green-400 rounded-full" />
@@ -137,21 +137,21 @@ export default function LandingPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <motion.div variants={itemVariants}>
             <Feature
-              icon={<Activity className="text-green-400" />}
+              icon={<Activity className="text-axiom-red" />}
               title="Real-Time Monitoring"
               desc="Watch every transaction in real-time. Detect anomalies instantly."
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Feature
-              icon={<BarChart2 className="text-green-400" />}
+              icon={<BarChart2 className="text-axiom-red" />}
               title="Risk Scoring"
               desc="AI-powered risk scoring. Know your threat level at a glance."
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Feature
-              icon={<Radar className="text-green-400" />}
+              icon={<Radar className="text-axiom-red" />}
               title="Threat Intelligence"
               desc="Global threat feeds. Exploit detection. Always ahead."
             />
@@ -193,7 +193,7 @@ export default function LandingPage() {
           matters most.
         </p>
 
-        <button className="bg-orange-500 hover:bg-orange-600 transition px-8 py-3 rounded-lg font-medium">
+        <button className="bg-axiom-red hover:bg-orange-600 transition px-8 py-3 rounded-lg font-medium">
           Launch Command Center →
         </button>
       </section>

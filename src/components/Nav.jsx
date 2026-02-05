@@ -25,31 +25,31 @@ export default function Nav() {
         <div className="hidden md:flex gap-8 text-sm text-gray-300">
           <Link
             to="/dashboard"
-            className="hover:text-green-500 transition-colors duration-300 font-bold"
+            className="hover:text-axiom-red transition-colors duration-300 font-bold"
           >
             Dashboard
           </Link>
           <Link
             to="/threats"
-            className="hover:text-green-500 transition-colors duration-300 font-bold"
+            className="hover:text-axiom-red transition-colors duration-300 font-bold"
           >
             Threats
           </Link>
           <Link
             to="/analytics"
-            className="hover:text-green-500 transition-colors duration-300 font-bold"
+            className="hover:text-axiom-red transition-colors duration-300 font-bold"
           >
             Analytics
           </Link>
           <Link
             to="/about"
-            className="hover:text-green-500 transition-colors duration-300 font-bold"
+            className="hover:text-axiom-red transition-colors duration-300 font-bold"
           >
             About us
           </Link>
           <Link
             to="/contact"
-            className="hover:text-green-500 transition-colors duration-300 font-bold"
+            className="hover:text-axiom-red transition-colors duration-300 font-bold"
           >
             Contact
           </Link>
@@ -57,7 +57,7 @@ export default function Nav() {
 
         <div className="flex items-center gap-4">
           {/* <button className="text-sm text-gray-300">Sign In</button> */}
-          <button className="hidden md:block bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-lg text-sm font-medium">
+          <button className="hidden md:block bg-red-700 hover:bg-axiom-red transition px-4 py-2 rounded-lg text-sm font-medium">
             Launch Console
           </button>
           <button
@@ -80,35 +80,35 @@ export default function Nav() {
           <div className="flex flex-col gap-4">
             <Link
               to="/dashboard"
-              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+              className="text-gray-300 hover:text-axiom-red transition-colors duration-300 font-bold"
             >
               Dashboard
             </Link>
             <Link
               to="/threats"
-              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+              className="text-gray-300 hover:text-axiom-red transition-colors duration-300 font-bold"
             >
               Threats
             </Link>
             <Link
               to="/analytics"
-              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+              className="text-gray-300 hover:text-axiom-red transition-colors duration-300 font-bold"
             >
               Analytics
             </Link>
             <Link
               to="/about"
-              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+              className="text-gray-300 hover:text-axiom-red transition-colors duration-300 font-bold"
             >
               About us
             </Link>
             <Link
               to="/contact"
-              className="text-gray-300 hover:text-green-500 transition-colors duration-300 font-bold"
+              className="text-gray-300 hover:text-axiom-red transition-colors duration-300 font-bold"
             >
               Contact
             </Link>
-            <button className="bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-lg text-sm font-medium w-full">
+            <button className="bg-orange-500 hover:bg-axiom-red transition px-4 py-2 rounded-lg text-sm font-medium w-full">
               Launch Console
             </button>
           </div>

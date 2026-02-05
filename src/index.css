@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme {
+  --color-axiom-red: #fa0000;
+}

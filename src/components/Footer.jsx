@@ -13,7 +13,7 @@ export default function Footer() {
             <ShieldCheck size={16} className="font-bold" />
             AxiomVault
           </h1> */}
-           <img src={LOGO} alt="AxiomVault Inc logo" className='w-40 ' />
+           <Link to="/"><img src={LOGO} alt="AxiomVault Inc logo" className='w-40 ' /></Link>
           <p className="pt-5 font-medium text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             eaque distinctio at, praesentium id sit?

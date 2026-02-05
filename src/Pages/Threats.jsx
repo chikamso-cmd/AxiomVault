@@ -44,11 +44,11 @@ export default function Threats() {
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 py-16 text-center">
-        <span className="inline-flex items-center gap-2 mb-4 px-3 py-1 text-xs rounded-full bg-green-500/10 text-green-400">
+        <span className="inline-flex items-center gap-2 mb-4 px-3 py-1 text-xs rounded-full bg-green-500/10 text-axiom-red">
           <Activity size={12} /> REAL-TIME THREAT DETECTION
         </span>
 
-        <h1 className="text-3xl md:text-5xl font-bold text-orange-400 mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-axiom-red mb-4">
           Global Threat Landscape
         </h1>
 
@@ -166,7 +166,7 @@ export default function Threats() {
           Join thousands of companies preventing fraud before it happens
         </p>
 
-        <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
+        <button className="bg-axiom-red hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
           Launch Console →
         </button>
       </section>
