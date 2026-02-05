@@ -36,7 +36,7 @@ export default function LandingPage() {
       <Nav />
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-30">
         {/* Left */}
         <motion.div
           variants={containerVariants}
