@@ -13,7 +13,9 @@ export default function Footer() {
             <ShieldCheck size={16} className="font-bold" />
             AxiomVault
           </h1> */}
-           <Link to="/"><img src={LOGO} alt="AxiomVault Inc logo" className='w-40 ' /></Link>
+          <Link to="/">
+            <img src={LOGO} alt="AxiomVault Inc logo" className="w-40 " />
+          </Link>
           <p className="pt-5 font-medium text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             eaque distinctio at, praesentium id sit?
@@ -88,7 +90,7 @@ export default function Footer() {
             >
               <li className="flex items-center gap-3">
                 <Phone size={20} />
-                +2341234567890, +23455567890
+                +2349078214093, +2348085276954
               </li>
             </Link>
             <Link
@@ -96,7 +98,7 @@ export default function Footer() {
               className="hover:text-white transition-colors duration-300"
             >
               <li className="flex items-center gap-3">
-                <MapPin size={20} /> San Francisco, CA, USA
+                <MapPin size={20} /> Anambra State silicon valley
               </li>
             </Link>
             <Link

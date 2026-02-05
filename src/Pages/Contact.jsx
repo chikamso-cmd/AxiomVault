@@ -76,7 +76,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-gray-400">+1 (800) 555-AXVM</p>
+                  <p className="text-gray-400">
+                    +234 907 821 4093, +234 8085276954
+                  </p>
                 </div>
               </div>
 
@@ -86,7 +88,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-medium">Office</p>
-                  <p className="text-gray-400">San Francisco, CA, USA</p>
+                  <p className="text-gray-400">Anambra State silicon valley</p>
                 </div>
               </div>
             </div>
