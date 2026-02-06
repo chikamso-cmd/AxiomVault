@@ -27,9 +27,10 @@ export default function AboutUs() {
           transition={{ delay: 0.3 }}
           className="max-w-2xl mx-auto text-gray-300 text-lg"
         >
-          At AxiomVault, we provide next-generation cybersecurity and fraud
-          prevention solutions that help organizations stay ahead of evolving
-          digital threats.
+          AxiomVault is a cybersecurity company focused on protecting modern
+          digital businesses. We combine managed detection and response, cloud
+          security, and fraud intelligence to help teams reduce risk without
+          slowing growth.
         </motion.p>
       </section>
 
@@ -45,8 +46,8 @@ export default function AboutUs() {
           <Target className="text-axiom-red mb-4" />
           <h3 className="text-2xl font-semibold mb-3">Our Mission</h3>
           <p className="text-gray-300 leading-relaxed">
-            To empower businesses with intelligent security systems that detect,
-            prevent, and respond to threats in real time.
+            Help organizations detect, contain, and recover from cyber threats
+            through real-time visibility and rapid response.
           </p>
         </motion.div>
 
@@ -60,8 +61,8 @@ export default function AboutUs() {
           <Globe className="text-axiom-red mb-4" />
           <h3 className="text-2xl font-semibold mb-3">Our Vision</h3>
           <p className="text-gray-300 leading-relaxed">
-            To become the global standard for digital security and fraud
-            intelligence, protecting millions of users worldwide.
+            Make enterprise-grade security accessible to every growing company,
+            without complex tooling or oversized teams.
           </p>
         </motion.div>
       </section>
@@ -77,17 +78,17 @@ export default function AboutUs() {
             {
               icon: <Shield />,
               title: "Security First",
-              desc: "We prioritize protection, privacy, and trust in every solution.",
+              desc: "We build with strong controls, least privilege, and secure defaults.",
             },
             {
               icon: <Users />,
               title: "Customer Focus",
-              desc: "We build scalable tools designed around real user needs.",
+              desc: "We align to your environment, risk profile, and business goals.",
             },
             {
               icon: <Target />,
               title: "Innovation",
-              desc: "We continuously improve through research and technology.",
+              desc: "We iterate quickly to stay ahead of evolving threats.",
             },
           ].map((item, i) => (
             <motion.div
@@ -146,12 +147,11 @@ export default function AboutUs() {
         >
           <h3 className="text-3xl font-bold mb-4 text-center">Our Story</h3>
           <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            et fugiat architecto eius pariatur nisi ab minus? Eum hic
-            praesentium voluptatem officia quasi dolorem eius, dolore nemo
-            doloremque beatae, architecto animi, aspernatur fuga. Cum nostrum
-            quis et sunt qui recusandae ipsa rerum consequuntur omnis autem quam
-            aliquam, temporibus corrupti assumenda.
+            AxiomVault was founded by security engineers and incident responders
+            who saw a common gap: modern teams needed clear signal, fast
+            response, and measurable security outcomes without a heavy stack.
+            We built a unified platform that combines detection, investigation,
+            and response so teams can focus on growth while staying protected.
           </p>
         </motion.div>
       </section>
@@ -163,20 +163,20 @@ export default function AboutUs() {
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
-              title: "Fraud Detection & Prevention",
-              desc: "We analyze millions of transactions in real time to identify suspicious patterns, prevent unauthorized access, and reduce financial losses.",
+              title: "Managed Detection & Response (MDR)",
+              desc: "24/7 monitoring with triage, containment, and guided recovery steps.",
             },
             {
-              title: "Cybersecurity Monitoring",
-              desc: "Our platform continuously monitors systems and networks, providing early warnings and automated responses to emerging threats.",
+              title: "Cloud & Endpoint Security",
+              desc: "Visibility across cloud workloads, endpoints, and identity to stop lateral movement.",
             },
             {
-              title: "Risk Intelligence",
-              desc: "We transform complex security data into actionable insights, helping organizations make informed decisions.",
+              title: "Threat & Fraud Intelligence",
+              desc: "Behavioral analytics and risk scoring for transactions and access attempts.",
             },
             {
               title: "Compliance & Reporting",
-              desc: "Our tools simplify regulatory compliance with automated reports, audit trails, and industry-standard controls.",
+              desc: "Evidence-driven reporting designed to align with SOC 2, ISO 27001, and PCI.",
             },
           ].map((item, i) => (
             <motion.div
@@ -212,11 +212,10 @@ export default function AboutUs() {
           </h3>
 
           <p className="text-gray-300 max-w-4xl mx-auto text-center leading-relaxed">
-            AxiomVault is powered by advanced machine learning, behavioral
-            analytics, and cloud-native infrastructure. Our intelligent engines
-            adapt to new attack patterns, learn from historical data, and
-            continuously improve accuracy. This ensures our clients stay
-            protected against both known and unknown threats.
+            AxiomVault is built on a cloud-native security stack with behavioral
+            analytics, automated playbooks, and real-time telemetry. Our engine
+            continuously learns from live signals to reduce noise while
+            increasing detection accuracy.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
@@ -246,10 +245,10 @@ export default function AboutUs() {
         </h3>
 
         <p className="text-gray-300 max-w-3xl mx-auto text-center leading-relaxed">
-          Our leadership team brings together experts in cybersecurity, data
-          science, finance, and software engineering. At AxiomVault, we foster a
-          culture of transparency, collaboration, and continuous learning. We
-          believe that strong teams build strong security.
+          Our team includes security engineers, incident responders, and
+          analysts who have protected fintech, SaaS, and healthcare companies.
+          We operate with transparency, clear escalation paths, and shared
+          ownership of outcomes.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
@@ -282,8 +281,8 @@ export default function AboutUs() {
         >
           <h3 className="text-3xl font-bold mb-4">Partner With AxiomVault</h3>
           <p className="text-white/90 mb-6 max-w-xl mx-auto">
-            Join thousands of organizations protecting their digital assets with
-            our intelligent security platform.
+            Join teams protecting their digital assets with AxiomVault's
+            security platform.
           </p>
 
           <Link to="/contact">

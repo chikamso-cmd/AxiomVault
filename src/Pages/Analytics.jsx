@@ -53,8 +53,8 @@ export default function Analytics() {
         </h1>
 
         <p className="max-w-2xl mx-auto text-gray-300 mb-10">
-          Deep insights into fraud patterns, trends, and performance metrics
-          across your entire ecosystem
+          Clear, actionable analytics across transactions, identity, and
+          user behavior with evidence you can take to audit or leadership.
         </p>
 
         {/* Stats */}
@@ -105,7 +105,7 @@ export default function Analytics() {
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Key Insights</h2>
           <p className="text-gray-400">
-            Actionable intelligence to optimize your fraud prevention strategy
+            Prioritized intelligence for the incidents that matter most
           </p>
         </div>
 
@@ -120,8 +120,8 @@ export default function Analytics() {
             <Insight
               icon={<Clock size={18} />}
               title="Peak Fraud Hours"
-              subtitle="9 PM - 11 PM shows highest fraud activity"
-              value="34% of daily fraud"
+              subtitle="9 PM - 11 PM shows highest risk activity"
+              value="34% of daily alerts"
               gradient="from-orange-500 to-red-500"
             />
           </motion.div>
@@ -129,8 +129,8 @@ export default function Analytics() {
             <Insight
               icon={<CreditCard size={18} />}
               title="Top Fraud Category"
-              subtitle="Card-not-present transactions"
-              value="48% of all fraud"
+              subtitle="Card-not-present and account recovery"
+              value="48% of all incidents"
               gradient="from-yellow-500 to-orange-500"
             />
           </motion.div>
@@ -138,8 +138,8 @@ export default function Analytics() {
             <Insight
               icon={<Globe size={18} />}
               title="Geographic Hotspot"
-              subtitle="Southeast region requires enhanced monitoring"
-              value="22% of transactions"
+              subtitle="High-risk login attempts cluster by region"
+              value="22% of flagged sessions"
               gradient="from-orange-500 to-pink-500"
             />
           </motion.div>
@@ -147,8 +147,8 @@ export default function Analytics() {
             <Insight
               icon={<Smartphone size={18} />}
               title="Device Risk Factor"
-              subtitle="New devices have higher fraud rate"
-              value="12.3% fraud rate"
+              subtitle="First-seen devices correlate to higher risk"
+              value="12.3% alert rate"
               gradient="from-pink-500 to-red-500"
             />
           </motion.div>
@@ -161,12 +161,12 @@ export default function Analytics() {
           Explore Your Analytics
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-8">
-          Get detailed analytics, custom reports, and real-time dashboards
+          Build reports by customer, channel, or geography with live dashboards
         </p>
 
         <Link to="/dashboard">
           <button className="bg-axiom-red hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
-            Open Analytics Dashboard →
+            Open Analytics Dashboard 
           </button>
         </Link>
       </section>

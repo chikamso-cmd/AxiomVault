@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 import Nav from "../components/Nav";
 import { ThreatStat, Method } from "../components/ThreatsStats";
-import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -53,8 +53,8 @@ export default function Threats() {
         </h1>
 
         <p className="max-w-2xl mx-auto text-gray-300 mb-12">
-          Monitor emerging fraud threats across payment channels, regions, and
-          fraud types in real-time
+          Track emerging threats across payment channels, identity flows, and
+          APIs with live context from AxiomVault intelligence.
         </p>
 
         {/* Threat Stats */}
@@ -113,8 +113,7 @@ export default function Threats() {
             Detection Methods
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Our multi-layered detection approach catches fraud before it impacts
-            your business
+            Layered detections reduce blind spots and improve time-to-response
           </p>
         </div>
 
@@ -129,7 +128,7 @@ export default function Threats() {
             <Method
               icon={<Brain size={18} />}
               title="ML-Based Detection"
-              desc="Advanced machine learning algorithms analyze transaction patterns in real-time"
+              desc="Models score behavior patterns and adapt to new attack paths"
             />
           </motion.div>
 
@@ -137,21 +136,21 @@ export default function Threats() {
             <Method
               icon={<Activity size={18} />}
               title="Behavioral Analysis"
-              desc="Monitor user behavior and device fingerprints for anomalies"
+              desc="Session profiling flags anomaly clusters across devices"
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Method
               icon={<Network size={18} />}
               title="Network Intelligence"
-              desc="Global threat database with 99.9% accuracy detection rate"
+              desc="Threat enrichment from IP, ASN, and reputation signals"
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Method
               icon={<ScanFace size={18} />}
               title="Biometric Verification"
-              desc="Multi-factor authentication with facial recognition"
+              desc="Step-up verification with phishing-resistant signals"
             />
           </motion.div>
         </motion.div>
@@ -163,17 +162,17 @@ export default function Threats() {
           Start Protecting Your Business
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-8">
-          Join thousands of companies preventing fraud before it happens
+          Get continuous monitoring, alert triage, and response guidance
         </p>
 
         <button className="bg-axiom-red hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
-          Launch Console →
+          Launch Console
         </button>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
-     <Footer />
+        <Footer />
       </footer>
     </div>
   );
