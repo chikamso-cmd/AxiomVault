@@ -16,9 +16,12 @@ export default function Footer() {
           <Link to="/">
             <img src={LOGO} alt="AxiomVault Inc logo" className="w-40 " />
           </Link>
-          <p className="pt-5 font-medium text-left">
-            AxiomVault provides managed detection, cloud security, and fraud
-            intelligence built for modern digital businesses.
+          <p className="pt-2 font-medium text-left">
+            AxiomVault is the first technical layer of defense against internal
+            fraud, beginning with payroll. Our platform delivers real-time
+            detection and explainable audit trails for auditors, built as a
+            scalable foundation for enterprise trust and future regulatory
+            security systems
           </p>
         </div>
         <div className="text-left">

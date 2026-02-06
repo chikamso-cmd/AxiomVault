@@ -129,7 +129,7 @@ export default function Analytics() {
             <Insight
               icon={<CreditCard size={18} />}
               title="Top Fraud Category"
-              subtitle="CNP and account recovery flows targetted"
+              subtitle="Payroll Anomaly Detection Engine"
               value="48% of all incidents"
               gradient="from-yellow-500 to-orange-500"
             />

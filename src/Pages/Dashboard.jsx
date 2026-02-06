@@ -85,16 +85,16 @@ export default function Dashboard() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6"
         >
           <motion.div variants={itemVariants}>
-              <StatCard title="Incidents Detected" value="142" change="+23%" />
+            <StatCard title="Incidents Detected" value="142" change="+23%" />
           </motion.div>
           <motion.div variants={itemVariants}>
-              <StatCard title="Threats Blocked" value="50,847" change="+8.2%" />
+            <StatCard title="Threats Blocked" value="50,847" change="+8.2%" />
           </motion.div>
           <motion.div variants={itemVariants}>
-              <StatCard title="Detection Rate" value="99.7%" change="+0.2%" />
+            <StatCard title="Detection Rate" value="99.7%" change="+0.2%" />
           </motion.div>
           <motion.div variants={itemVariants}>
-              <StatCard title="Avg Response Time" value="340ms" change="-4.1%" />
+            <StatCard title="Avg Response Time" value="340ms" change="-4.1%" />
           </motion.div>
         </motion.div>
 
@@ -118,8 +118,6 @@ export default function Dashboard() {
   );
 }
 
-
-
 function ActiveThreats() {
   return (
     <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4">
@@ -142,52 +140,51 @@ function ActiveThreats() {
         <motion.div variants={itemVariants}>
           <Threat
             level="critical"
-            title="DDoS Attack Detected"
+            title="Multiple Employees Linked to the Same Bank Account"
             meta="2 minutes ago"
             blocked="245,000"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
-            <Threat
-              level="high"
-              title="Unusual Login Pattern"
-              meta="15 minutes ago"
-              blocked="3,400"
-            />
+          <Threat
+            level="high"
+            title="Reused BVNs/NINs Across Employee Records"
+            meta="15 minutes ago"
+            blocked="3,400"
+          />
         </motion.div>
         <motion.div variants={itemVariants}>
-            <Threat
-              level="high"
-              title="Credential Stuffing Attempt"
-              meta="32 minutes ago"
-              blocked="1,240"
-            />
+          <Threat
+            level="high"
+            title="Sudden Payroll Spikes or Abnormal Adjustments"
+            meta="32 minutes ago"
+            blocked="1,240"
+          />
         </motion.div>
         <motion.div variants={itemVariants}>
-            <Threat
-              level="medium"
-              title="SQL Injection Attempt"
-              meta="1 hour ago"
-              blocked="145"
-            />
+          <Threat
+            level="medium"
+            title="SQL Injection Attempt"
+            meta="1 hour ago"
+            blocked="145"
+          />
         </motion.div>
         <motion.div variants={itemVariants}>
-            <Threat
-              level="low"
-              title="Rate Limit Exceeded"
-              meta="2 hours ago"
-              blocked="56"
-            />
+          <Threat
+            level="low"
+            title="Rate Limit Exceeded"
+            meta="2 hours ago"
+            blocked="56"
+          />
         </motion.div>
       </motion.div>
 
       <button className="w-full mt-4 py-2 border border-green-500/30 text-green-400 rounded-lg text-sm hover:bg-green-500/10">
-        View All Threats 
+        View All Threats
       </button>
     </div>
   );
 }
-
 
 function Timeline() {
   return (
@@ -212,7 +209,7 @@ function Timeline() {
         <motion.div variants={itemVariants}>
           <TimelineItem
             time="14:32"
-            title="DDoS Mitigation Engaged"
+            title="Multiple Employees Linked to the Same Bank Account"
             status="MITIGATED"
             color="red"
           />
@@ -220,7 +217,7 @@ function Timeline() {
         <motion.div variants={itemVariants}>
           <TimelineItem
             time="14:28"
-            title="Credential Stuffing Blocked"
+            title="Sudden Payroll Spikes or Abnormal Adjustments"
             status="BLOCKED"
             color="orange"
           />
@@ -238,8 +235,6 @@ function Timeline() {
   );
 }
 
-
-
 function SystemStatus() {
   return (
     <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4">
@@ -255,8 +250,6 @@ function SystemStatus() {
   );
 }
 
-
-
 function RiskLevel() {
   return (
     <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4 text-center">
@@ -266,7 +259,7 @@ function RiskLevel() {
         <div className="absolute inset-0 rounded-full border-8 border-green-500/20" />
         <div className="absolute inset-2 rounded-full border-8 border-green-400" />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <p className="text-2xl font-bold text-green-400">25%</p>
+          <p className="text-2xl font-bold text-green-400">5%</p>
           <p className="text-xs text-gray-400">LOW</p>
         </div>
       </div>
@@ -286,12 +279,13 @@ function QuickActions() {
       <h3 className="font-semibold mb-4">Quick Actions</h3>
 
       <div className="space-y-3 text-sm">
-        <Action icon={<FileText size={14} />} text="Generate Compliance Report" />
+        <Action
+          icon={<FileText size={14} />}
+          text="Generate Compliance Report"
+        />
         <Action icon={<CheckCircle size={14} />} text="Review SIEM Alerts" />
         <Action icon={<Activity size={14} />} text="Run Containment Drill" />
       </div>
     </div>
   );
 }
-
-

@@ -29,10 +29,11 @@ export default function AboutUs() {
           transition={{ delay: 0.3 }}
           className="max-w-2xl mx-auto text-gray-300 text-lg"
         >
-          AxiomVault is a premier cybersecurity firm dedicated to fortifying
-          modern digital enterprises. We converge managed detection and
-          response, cloud security, and fraud intelligence to empower teams to
-          eliminate risk without compromising velocity.
+          AxiomVault is the first technical layer of defense against internal
+          fraud, beginning with payroll. Our platform delivers real-time
+          detection and explainable audit trails for auditors, built as a
+          scalable foundation for enterprise trust and future regulatory
+          security systems
         </motion.div>
       </section>
 
@@ -117,7 +118,7 @@ export default function AboutUs() {
           {[
             {
               label: "Clients",
-              value: "500+",
+              value: "50+",
             },
             {
               label: "Threats Blocked",
@@ -125,7 +126,7 @@ export default function AboutUs() {
             },
             {
               label: "Countries",
-              value: "40+",
+              value: "10+",
             },
             {
               label: "Uptime",
@@ -150,15 +151,36 @@ export default function AboutUs() {
           className="bg-white/5 backdrop-blur rounded-2xl p-10"
         >
           <h3 className="text-3xl font-bold mb-4 text-center">Our Story</h3>
-          <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-center">
-            AxiomVault was founded by elite security engineers and incident
-            responders who identified a critical gap: modern teams needed
-            high-fidelity signal, millisecond response, and measurable security
-            outcomes without a bloated stack. As a subsidiary of Omnicipia, we
-            leverage enterprise-grade infrastructure, research, and innovation
-            to architect a unified platform that fuses detection, investigation,
-            and response—so teams can innovate fearlessly while staying
-            protected.
+          <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-center py-2">
+            <span className="font-bold">The Spark:</span> It started in Awka,
+            Anambra. While the world was obsessed with hackers breaking into
+            systems, we saw a much bigger, silent crisis: the people already
+            inside the systems. We watched as billions of Naira meant for
+            schools, roads, and hospitals vanished—not because of external
+            cyberattacks, but through "Ghost Workers," manipulated payrolls, and
+            secret handshakes behind closed doors.
+          </p>
+
+          <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-center ">
+            <span className="font-bold"> The Realization:</span> We realized
+            that traditional security was like a locked front door with the
+            windows left wide open. Existing AI startups were fighting outside
+            strangers, but nobody was watching the "trusted" insiders. The
+            system was broken because it assumed that an authenticated user was
+            an honest user. We knew that for Nigeria—and the world—to truly
+            prosper, we had to build a Vault of Integrity.
+          </p>
+
+          <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-center py-2">
+            <span className="font-bold text-28px">
+              The Birth of AxiomVault:
+            </span>{" "}
+            AxiomVault was born to be the "Digital Immune System" for
+            institutional finance. We brought together a team of elite
+            engineers, data scientists, and forensic experts to build a system
+            that doesn't just watch data—it understands intent. We combined
+            high-speed Go/Rust engines with the world's most advanced Graph
+            Neural Networks to catch what everyone else was missing.
           </p>
         </motion.div>
       </section>
@@ -170,12 +192,12 @@ export default function AboutUs() {
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
-              title: "Managed Detection & Response (MDR)",
-              desc: "24/7 monitoring with triage, containment, and guided recovery steps.",
+              title: "Risk Intelligence",
+              desc: "We transform complex security data into actionable insigths, helping organisations make informed decisions.",
             },
             {
-              title: "Cloud & Endpoint Security",
-              desc: "Visibility across cloud workloads, endpoints, and identity to stop lateral movement.",
+              title: "Compliance and Reporting",
+              desc: "Our tools simplify regulatory compliance with automated reports, audit trails, and industry standard controls.",
             },
             {
               title: "Threat & Fraud Intelligence",
@@ -219,17 +241,20 @@ export default function AboutUs() {
           </h3>
 
           <p className="text-gray-300 max-w-4xl mx-auto text-center leading-relaxed">
-            AxiomVault is built on a cloud-native security stack with behavioral
-            analytics, automated playbooks, and real-time telemetry. Our engine
-            continuously learns from live signals to reduce noise while
-            increasing detection accuracy.
+            We utilize a high-performance Go and Rust engine to process millions
+            of institutional records in under five seconds. Our specialized
+            Graph Neural Networks analyze hidden relationships between people
+            and payments to uncover collusion that manual audits miss. Every
+            alert is backed by Explainable AI, providing auditors with clear,
+            defensible evidence that holds up in court. We protect this data
+            with a Zero-Trust security mandate and immutable logs, ensuring that
+            once the truth is recorded, it can never be deleted.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {[
               "AI-Powered Detection",
               "Real-Time Processing",
-              "Cloud Scalability",
               "Zero-Trust Architecture",
               "Encrypted Data Pipelines",
               "Automated Incident Response",

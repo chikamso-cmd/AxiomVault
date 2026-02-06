@@ -49,31 +49,35 @@ export default function LandingPage() {
 
           <motion.div variants={itemVariants}>
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-              Enterprise <br />
-              <span className="text-axiom-red">Cyber Defense</span>
+              AI-Internal <br />
+              <span className="text-axiom-red">
+                AI-Internal Fraud Detection System
+              </span>
             </h1>
           </motion.div>
 
           <motion.div variants={itemVariants}>
             <p className="text-gray-300 max-w-lg mb-8">
-              AxiomVault unifies managed detection, cloud security, and fraud
-              intelligence into a single autonomous platform. Gain absolute
-              visibility across identity, endpoints, and applications, then
-              neutralize threats with AI-driven response playbooks.
+              AxiomVault is the first technical layer of defense against
+              internal fraud, beginning with payroll. Our platform delivers
+              real-time detection and explainable audit trails for auditors,
+              built as a scalable foundation for enterprise trust and future
+              regulatory security systems.
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants}>
             <ul className="text-sm text-gray-300 space-y-2 mb-8">
-              <li>
-                Unified telemetry across multi-cloud, endpoint, and identity
-                fabrics
+              <li className="list-disc">
+                Real-time fraud detection across digital channels and
+                transactions
               </li>
-              <li>
-                Behavioral heuristics that eliminate noise and false positives
+              <li className="list-disc">
+                Regulatory-compliant monitoring with automated risk scoring
               </li>
-              <li>
-                24/7 SOC-backed response and forensic investigation support
+              <li className="list-disc">
+                Early-warning systems to prevent financial and operational
+                losses
               </li>
             </ul>
           </motion.div>
@@ -118,9 +122,12 @@ export default function LandingPage() {
             </div>
 
             <div className="space-y-4 text-sm">
-              <Incident title="DDoS Attack Detected" value="+23%" />
-              <Incident title="Unusual Login Pattern" value="+18%" />
-              <Incident title="API Abuse Blocked" value="+12%" />
+              <Incident title="The Ghost Identity Collusion " value="+23%" />
+              <Incident title="The Remote Kickback Trigger " value="+18%" />
+              <Incident
+                title="The Midnight Payroll Modification"
+                value="+12%"
+              />
             </div>
 
             <div className="grid grid-cols-2 gap-4 mt-6 text-xs">
@@ -140,33 +147,40 @@ export default function LandingPage() {
         className="max-w-7xl mx-auto px-6 py-20 text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Enterprise Security Features
+          Internal Fraud Detection Features Using AI
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-12">
-          Purpose-built controls for detection, investigation, and autonomous
-          response across complex hybrid environments.
+          Purpose-built regulatory and security controls for early fraud
+          detection, compliance monitoring, and automated risk mitigation.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <motion.div variants={itemVariants}>
             <Feature
               icon={<Activity className="text-axiom-red" />}
-              title="Real-Time Telemetry"
-              desc="Correlate identity, endpoint, and network signals in milliseconds."
+              title="Risk Command Center Dashboard (Primary Interface)"
+              desc="Real-time risk score per payroll run / department
+Visual indicators of anomalies (icons, color codes)
+Prioritized fraud alerts (High / Medium / Low)"
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Feature
               icon={<BarChart2 className="text-axiom-red" />}
-              title="Predictive Risk Scoring"
-              desc="Adaptive ML models surface high-impact incidents before they escalate."
+              title="Payroll Anomaly Detection Engine"
+              desc="Multiple employees linked to the same bank account
+Reused BVNs / NINs across records
+Sudden payroll spikes or abnormal adjustments
+Rule + AI hybrid detection"
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Feature
               icon={<Radar className="text-axiom-red" />}
-              title="Global Threat Intelligence"
-              desc="Curated dark web and adversary intel feeds with automated enrichment."
+              title="Insider Behavior & Collusion Signals"
+              desc="Basic relationship mapping between:- Employees- Bank accounts- Departments
+Flagging suspicious overlaps and repeated patterns
+Simple visual graph "
             />
           </motion.div>
         </div>
