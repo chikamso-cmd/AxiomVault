@@ -12,6 +12,9 @@ import Analytics from "./Pages/Analytics";
 import Threats from "./Pages/Threats";
 import ContactPage from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
+import TermsOfUse from "./Pages/terms/Terms";
+import PrivacyPolicy from "./Pages/Policy/Policy";
+import CookiesPolicy from "./Pages/cookies/CookiesPolicy";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +34,9 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/threats" element={<Threats />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/terms" element={<TermsOfUse />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/cookies" element={<CookiesPolicy />} />
         </Routes>
       </Router>
     </>

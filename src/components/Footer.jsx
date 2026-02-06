@@ -60,19 +60,19 @@ export default function Footer() {
           <h2 className="font-bold text-[20px] pb-5 text-white">Legal Terms</h2>
           <ul className="space-y-2 text-[16px]">
             <Link
-              to="#"
+              to="/terms"
               className="hover:text-white transition-colors duration-300"
             >
               <li>Terms of Use</li>
             </Link>
             <Link
-              to="#"
+              to="/privacy"
               className="hover:text-white transition-colors duration-300"
             >
               <li>Privacy Policy</li>
             </Link>
             <Link
-              to="#"
+              to="/cookies"
               className="hover:text-white transition-colors duration-300"
             >
               <li>Cookies Policy</li>
