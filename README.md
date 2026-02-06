@@ -7,8 +7,10 @@ A modern, responsive enterprise cybersecurity UI built with React and Vite. Axio
 - Real-time threat monitoring and incident visibility
 - Threats, analytics, and dashboard views
 - About Us and Contact pages for product story and outreach
+- Dedicated Terms, Privacy, and Cookies policy pages
 - Responsive navigation with mobile sidebar
 - Modern UI built with Tailwind CSS v4
+- High-fidelity cybersecurity content and copy
 - Reusable stat and insight cards across pages
 
 ## Tech Stack
@@ -37,6 +39,9 @@ A modern, responsive enterprise cybersecurity UI built with React and Vite. Axio
 - `/analytics` - Analytics and reporting
 - `/about` - About AxiomVault
 - `/contact` - Contact page
+- `/terms` - Terms of Use
+- `/privacy` - Privacy Policy
+- `/cookies` - Cookie Policy
 
 ## Project Structure
 
@@ -47,14 +52,21 @@ AxiomVault/
 |   |-- components/         # Reusable React components
 |   |   |-- Nav.jsx         # Sticky navigation + mobile menu
 |   |   |-- Footer.jsx      # Footer links + contact info
-|   |   `-- ThreatsStats.jsx # Shared stat, insight, and card components
+|   |   |-- ThreatsStats.jsx # Shared stat, insight, and card components
+|   |   `-- PolicyComponents.jsx # Reusable policy sections
 |   |-- Pages/              # Route-level pages
 |   |   |-- LandingPage.jsx
 |   |   |-- Dashboard.jsx
 |   |   |-- Threats.jsx
 |   |   |-- Analytics.jsx
 |   |   |-- AboutUs.jsx
-|   |   `-- Contact.jsx
+|   |   |-- Contact.jsx
+|   |   |-- terms/
+|   |   |   `-- Terms.jsx   # Terms of Use page
+|   |   |-- Policy/
+|   |   |   `-- Policy.jsx  # Privacy Policy page
+|   |   `-- cookies/
+|   |       `-- CookiesPolicy.jsx # Cookie Policy page
 |   |-- App.jsx             # Routes
 |   |-- App.css             # App styles
 |   |-- index.css           # Global styles
@@ -81,6 +93,7 @@ AxiomVault/
 git clone https://github.com/chikamso-cmd/AxiomVault.git
 cd AxiomVault
 ```
+
 ```demo link
 live demo link: https://axiomvault-inc.netlify.app
 AxiomVault
