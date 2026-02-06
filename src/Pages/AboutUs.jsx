@@ -1,8 +1,10 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+// import { motion } from "framer-motion";
+
 import { Shield, Users, Target, Globe } from "lucide-react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   return (
