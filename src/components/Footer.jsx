@@ -17,8 +17,8 @@ export default function Footer() {
             <img src={LOGO} alt="AxiomVault Inc logo" className="w-40 " />
           </Link>
           <p className="pt-5 font-medium text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            eaque distinctio at, praesentium id sit?
+            AxiomVault provides managed detection, cloud security, and fraud
+            intelligence built for modern digital businesses.
           </p>
         </div>
         <div className="text-left">
@@ -90,7 +90,7 @@ export default function Footer() {
             >
               <li className="flex items-center gap-3">
                 <Phone size={20} />
-                +2349078214093, +2348085276954
+                +234 907 821 4093, +234 808 527 6954
               </li>
             </Link>
             <Link
@@ -98,7 +98,7 @@ export default function Footer() {
               className="hover:text-white transition-colors duration-300"
             >
               <li className="flex items-center gap-3">
-                <MapPin size={20} /> Anambra State silicon valley
+                <MapPin size={20} /> Anambra State, Nigeria
               </li>
             </Link>
             <Link
@@ -113,7 +113,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center mt-5">
-        © {new Date().getFullYear()} AxiomVault. Inc Cybersecurity.
+        (c) {new Date().getFullYear()} AxiomVault Inc. Cybersecurity.
       </p>
     </section>
   );

@@ -2,7 +2,7 @@
 import { ShieldCheck, Activity, BarChart2, Radar, Menu, X } from "lucide-react";
 import Nav from "../components/Nav";
 import {Feature, Incident, Stats, Metric} from  '../components/ThreatsStats'
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 
 const containerVariants = {
@@ -59,16 +59,25 @@ export default function LandingPage() {
 
           <motion.div variants={itemVariants}>
             <p className="text-gray-300 max-w-lg mb-8">
-              Real-time threat detection powered by AI. Stop fraud before it
-              happens. Protect your enterprise with military-grade security and
-              instant incident response.
+              AxiomVault delivers managed detection, cloud security, and fraud
+              intelligence in one platform. Gain visibility across identity,
+              endpoints, and applications, then respond fast with guided
+              playbooks.
             </p>
+          </motion.div>
+
+          <motion.div variants={itemVariants}>
+            <ul className="text-sm text-gray-300 space-y-2 mb-8">
+              <li>Unified telemetry across cloud, endpoint, and identity</li>
+              <li>Behavioral analytics that reduce noise and false positives</li>
+              <li>24/7 analyst-backed response and investigation support</li>
+            </ul>
           </motion.div>
 
           <motion.div variants={itemVariants}>
             <div className="flex flex-wrap gap-4">
               <button className="bg-axiom-red hover:bg-axiom-red transition px-6 py-3 rounded-lg font-medium">
-                Access Command Center →
+                Access Command Center
               </button>
               <button className="border border-gray-400 hover:border-white transition px-6 py-3 rounded-lg font-medium">
                 View Demo
@@ -83,7 +92,7 @@ export default function LandingPage() {
                 <div className="w-6 h-6 rounded-full bg-orange-400" />
                 <div className="w-6 h-6 rounded-full bg-orange-300" />
               </div>
-              <span>50k+ threats blocked daily</span>
+              <span>High-fidelity alerts prioritized by risk</span>
             </div>
           </motion.div>
         </motion.div>
@@ -130,8 +139,8 @@ export default function LandingPage() {
           Enterprise Security Features
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-12">
-          Military-grade protection with instant incident response and threat
-          intelligence.
+          Purpose-built controls for detection, investigation, and response
+          across modern environments.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -139,21 +148,21 @@ export default function LandingPage() {
             <Feature
               icon={<Activity className="text-axiom-red" />}
               title="Real-Time Monitoring"
-              desc="Watch every transaction in real-time. Detect anomalies instantly."
+              desc="Correlate identity, endpoint, and network signals in seconds."
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Feature
               icon={<BarChart2 className="text-axiom-red" />}
               title="Risk Scoring"
-              desc="AI-powered risk scoring. Know your threat level at a glance."
+              desc="Adaptive scoring to surface high-impact incidents first."
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Feature
               icon={<Radar className="text-axiom-red" />}
               title="Threat Intelligence"
-              desc="Global threat feeds. Exploit detection. Always ahead."
+              desc="Curated intel feeds with automated enrichment and context."
             />
           </motion.div>
         </div>
@@ -169,16 +178,16 @@ export default function LandingPage() {
       >
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <motion.div variants={itemVariants}>
-            <Metric value="50K+" label="Threats Blocked Daily" />
+            <Metric value="50K+" label="Signals Processed Daily" />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <Metric value="0.34s" label="Average Response Time" />
+            <Metric value="0.34s" label="Average Alert Enrichment" />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Metric value="99.7%" label="Detection Rate" />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <Metric value="24/7" label="Enterprise Support" />
+            <Metric value="24/7" label="Analyst Coverage" />
           </motion.div>
         </div>
       </motion.div>
@@ -189,12 +198,12 @@ export default function LandingPage() {
           Secure Your Enterprise Today
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-8">
-          Get real-time threat detection and incident response. Protect what
-          matters most.
+          Get continuous monitoring, clear incident timelines, and response
+          guidance designed for security and IT teams.
         </p>
 
         <button className="bg-axiom-red hover:bg-orange-600 transition px-8 py-3 rounded-lg font-medium">
-          Launch Command Center →
+          Launch Command Center 
         </button>
       </section>
 

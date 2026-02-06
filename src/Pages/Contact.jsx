@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { motion } from "framer-motion";
+import {  } from "framer-motion";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav"
 
@@ -37,8 +37,8 @@ export default function ContactPage() {
             Contact <span className="text-axiom-red">Axiom Vault</span>
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Have questions, feedback, or need support? Our team is ready to help
-            you secure and scale your business.
+            Have questions or need security guidance? Our team can help with
+            onboarding, incident response, and product support.
           </p>
         </motion.div>
 
@@ -54,8 +54,8 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
               <p className="text-gray-400">
-                Reach out to us through any of the channels below. We respond
-                within 24 hours.
+                Reach out through any of the channels below. We typically
+                respond within one business day.
               </p>
             </div>
 
@@ -77,7 +77,7 @@ export default function ContactPage() {
                 <div>
                   <p className="font-medium">Phone</p>
                   <p className="text-gray-400">
-                    +234 907 821 4093, +234 8085276954
+                    +234 907 821 4093, +234 808 527 6954
                   </p>
                 </div>
               </div>
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-medium">Office</p>
-                  <p className="text-gray-400">Anambra State silicon valley</p>
+                  <p className="text-gray-400">Anambra State, Nigeria</p>
                 </div>
               </div>
             </div>

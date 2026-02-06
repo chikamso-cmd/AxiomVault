@@ -78,11 +78,11 @@ AxiomVault/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/chikamso-cmd/AxiomVault
+git clone https://github.com/chikamso-cmd/AxiomVault.git
 cd AxiomVault
 ```
 ```demo link
-live demo link: `https://axiomvault-inc.netlify.app`
+live demo link: https://axiomvault-inc.netlify.app
 AxiomVault
 ```
 

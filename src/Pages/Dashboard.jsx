@@ -16,7 +16,7 @@ import {
   Action,
 } from "../components/ThreatsStats";
 import Footer from "../components/Footer";
-import { motion } from "framer-motion";
+import {  } from "framer-motion";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -55,7 +55,7 @@ export default function Dashboard() {
               Security Command Center
             </h1>
             <p className="text-sm text-gray-400">
-              Real-time threat monitoring and incident response
+              Centralized view of alerts, investigations, and response actions
             </p>
           </div>
 
@@ -128,7 +128,7 @@ function ActiveThreats() {
           <AlertTriangle size={16} className="text-red-400" /> Active Threats
         </h3>
         <span className="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">
-          ● Live
+          LIVE
         </span>
       </div>
 
@@ -182,7 +182,7 @@ function ActiveThreats() {
       </motion.div>
 
       <button className="w-full mt-4 py-2 border border-green-500/30 text-green-400 rounded-lg text-sm hover:bg-green-500/10">
-        View All Threats →
+        View All Threats 
       </button>
     </div>
   );
@@ -212,7 +212,7 @@ function Timeline() {
         <motion.div variants={itemVariants}>
           <TimelineItem
             time="14:32"
-            title="DDoS Attack Initiated"
+            title="DDoS Mitigation Engaged"
             status="MITIGATED"
             color="red"
           />
@@ -220,7 +220,7 @@ function Timeline() {
         <motion.div variants={itemVariants}>
           <TimelineItem
             time="14:28"
-            title="Credential Stuffing Detected"
+            title="Credential Stuffing Blocked"
             status="BLOCKED"
             color="orange"
           />
@@ -228,7 +228,7 @@ function Timeline() {
         <motion.div variants={itemVariants}>
           <TimelineItem
             time="14:15"
-            title="System Health Check"
+            title="Integrity Check Completed"
             status="NORMAL"
             color="green"
           />
@@ -272,9 +272,9 @@ function RiskLevel() {
       </div>
 
       <ul className="text-xs text-gray-400 space-y-1">
-        <li>✓ All systems secure</li>
-        <li>✓ No active threats</li>
-        <li>✓ Normal traffic patterns</li>
+        <li>All systems secure</li>
+        <li>No active threats</li>
+        <li>Normal traffic patterns</li>
       </ul>
     </div>
   );
@@ -286,9 +286,9 @@ function QuickActions() {
       <h3 className="font-semibold mb-4">Quick Actions</h3>
 
       <div className="space-y-3 text-sm">
-        <Action icon={<FileText size={14} />} text="Generate Report" />
-        <Action icon={<CheckCircle size={14} />} text="Review Logs" />
-        <Action icon={<Activity size={14} />} text="Test Response" />
+        <Action icon={<FileText size={14} />} text="Generate Compliance Report" />
+        <Action icon={<CheckCircle size={14} />} text="Review SIEM Alerts" />
+        <Action icon={<Activity size={14} />} text="Run Containment Drill" />
       </div>
     </div>
   );
