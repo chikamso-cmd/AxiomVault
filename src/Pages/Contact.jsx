@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import {  } from "framer-motion";
+import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav"
 

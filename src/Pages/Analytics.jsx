@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import Nav from "../components/Nav";
 import { Stat, Insight } from "../components/ThreatsStats";
-import {  } from "framer-motion";
+import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import {Link} from "react-router-dom"
 

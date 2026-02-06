@@ -2,7 +2,7 @@
 import { ShieldCheck, Activity, BarChart2, Radar, Menu, X } from "lucide-react";
 import Nav from "../components/Nav";
 import {Feature, Incident, Stats, Metric} from  '../components/ThreatsStats'
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 
 const containerVariants = {
