@@ -16,7 +16,7 @@ import {
   Action,
 } from "../components/ThreatsStats";
 import Footer from "../components/Footer";
-import { motion } from "framer-motion";
+import {  } from "framer-motion";
 
 const containerVariants = {
   hidden: { opacity: 0 },

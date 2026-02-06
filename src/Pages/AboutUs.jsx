@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { } from "framer-motion";
 import { Shield, Users, Target, Globe } from "lucide-react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
@@ -12,16 +12,16 @@ export default function AboutUs() {
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-35 pb-24 text-center">
-        <motion.h2
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold mb-6"
         >
           Securing the Digital Future
-        </motion.h2>
+        </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
@@ -31,7 +31,7 @@ export default function AboutUs() {
           digital businesses. We combine managed detection and response, cloud
           security, and fraud intelligence to help teams reduce risk without
           slowing growth.
-        </motion.p>
+        </motion.div>
       </section>
 
       {/* Mission / Vision */}
