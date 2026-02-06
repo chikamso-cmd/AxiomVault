@@ -1,7 +1,6 @@
-
 import { ShieldCheck, Activity, BarChart2, Radar, Menu, X } from "lucide-react";
 import Nav from "../components/Nav";
-import {Feature, Incident, Stats, Metric} from  '../components/ThreatsStats'
+import { Feature, Incident, Stats, Metric } from "../components/ThreatsStats";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 
@@ -27,9 +26,7 @@ const itemVariants = {
   },
 };
 
-
 export default function LandingPage() {
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#050B24] via-[#0B1C46] to-[#081436] text-white font-sans pt-10">
       {/* Navbar */}
@@ -59,18 +56,25 @@ export default function LandingPage() {
 
           <motion.div variants={itemVariants}>
             <p className="text-gray-300 max-w-lg mb-8">
-              AxiomVault delivers managed detection, cloud security, and fraud
-              intelligence in one platform. Gain visibility across identity,
-              endpoints, and applications, then respond fast with guided
-              playbooks.
+              AxiomVault unifies managed detection, cloud security, and fraud
+              intelligence into a single autonomous platform. Gain absolute
+              visibility across identity, endpoints, and applications, then
+              neutralize threats with AI-driven response playbooks.
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants}>
             <ul className="text-sm text-gray-300 space-y-2 mb-8">
-              <li>Unified telemetry across cloud, endpoint, and identity</li>
-              <li>Behavioral analytics that reduce noise and false positives</li>
-              <li>24/7 analyst-backed response and investigation support</li>
+              <li>
+                Unified telemetry across multi-cloud, endpoint, and identity
+                fabrics
+              </li>
+              <li>
+                Behavioral heuristics that eliminate noise and false positives
+              </li>
+              <li>
+                24/7 SOC-backed response and forensic investigation support
+              </li>
             </ul>
           </motion.div>
 
@@ -139,30 +143,30 @@ export default function LandingPage() {
           Enterprise Security Features
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-12">
-          Purpose-built controls for detection, investigation, and response
-          across modern environments.
+          Purpose-built controls for detection, investigation, and autonomous
+          response across complex hybrid environments.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <motion.div variants={itemVariants}>
             <Feature
               icon={<Activity className="text-axiom-red" />}
-              title="Real-Time Monitoring"
-              desc="Correlate identity, endpoint, and network signals in seconds."
+              title="Real-Time Telemetry"
+              desc="Correlate identity, endpoint, and network signals in milliseconds."
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Feature
               icon={<BarChart2 className="text-axiom-red" />}
-              title="Risk Scoring"
-              desc="Adaptive scoring to surface high-impact incidents first."
+              title="Predictive Risk Scoring"
+              desc="Adaptive ML models surface high-impact incidents before they escalate."
             />
           </motion.div>
           <motion.div variants={itemVariants}>
             <Feature
               icon={<Radar className="text-axiom-red" />}
-              title="Threat Intelligence"
-              desc="Curated intel feeds with automated enrichment and context."
+              title="Global Threat Intelligence"
+              desc="Curated dark web and adversary intel feeds with automated enrichment."
             />
           </motion.div>
         </div>
@@ -198,12 +202,12 @@ export default function LandingPage() {
           Secure Your Enterprise Today
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-8">
-          Get continuous monitoring, clear incident timelines, and response
-          guidance designed for security and IT teams.
+          Get continuous monitoring, granular incident timelines, and response
+          guidance designed for elite security and IT operations teams.
         </p>
 
         <button className="bg-axiom-red hover:bg-orange-600 transition px-8 py-3 rounded-lg font-medium">
-          Launch Command Center 
+          Launch Command Center
         </button>
       </section>
 
@@ -216,5 +220,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-

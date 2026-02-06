@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import Nav from "../components/Nav"
+import Nav from "../components/Nav";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -37,8 +37,9 @@ export default function ContactPage() {
             Contact <span className="text-axiom-red">Axiom Vault</span>
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Have questions or need security guidance? Our team can help with
-            onboarding, incident response, and product support.
+            Schedule a consultation with our threat researchers and solution
+            architects. We are here to assist with deployment, incident
+            response, and enterprise support.
           </p>
         </motion.div>
 
@@ -54,8 +55,8 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
               <p className="text-gray-400">
-                Reach out through any of the channels below. We typically
-                respond within one business day.
+                Reach out through our secure channels below. Our team typically
+                responds within one business day.
               </p>
             </div>
 

@@ -20,7 +20,7 @@ export default function AboutUs() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold mb-6"
         >
-          Securing the Digital Future
+          Securing the Digital Frontier
         </motion.div>
 
         <motion.div
@@ -29,10 +29,10 @@ export default function AboutUs() {
           transition={{ delay: 0.3 }}
           className="max-w-2xl mx-auto text-gray-300 text-lg"
         >
-          AxiomVault is a cybersecurity company focused on protecting modern
-          digital businesses. We combine managed detection and response, cloud
-          security, and fraud intelligence to help teams reduce risk without
-          slowing growth.
+          AxiomVault is a premier cybersecurity firm dedicated to fortifying
+          modern digital enterprises. We converge managed detection and
+          response, cloud security, and fraud intelligence to empower teams to
+          eliminate risk without compromising velocity.
         </motion.div>
       </section>
 
@@ -48,8 +48,9 @@ export default function AboutUs() {
           <Target className="text-axiom-red mb-4" />
           <h3 className="text-2xl font-semibold mb-3">Our Mission</h3>
           <p className="text-gray-300 leading-relaxed">
-            Help organizations detect, contain, and recover from cyber threats
-            through real-time visibility and rapid response.
+            Empower organizations to detect, contain, and neutralize cyber
+            threats through absolute real-time visibility and rapid, automated
+            response.
           </p>
         </motion.div>
 
@@ -63,8 +64,9 @@ export default function AboutUs() {
           <Globe className="text-axiom-red mb-4" />
           <h3 className="text-2xl font-semibold mb-3">Our Vision</h3>
           <p className="text-gray-300 leading-relaxed">
-            Make enterprise-grade security accessible to every growing company,
-            without complex tooling or oversized teams.
+            Make military-grade security architecture accessible to every
+            growing enterprise, eliminating the need for complex tooling or
+            oversized operations teams.
           </p>
         </motion.div>
       </section>
@@ -80,12 +82,12 @@ export default function AboutUs() {
             {
               icon: <Shield />,
               title: "Security First",
-              desc: "We build with strong controls, least privilege, and secure defaults.",
+              desc: "We build with zero-trust principles, least privilege, and immutable security defaults.",
             },
             {
               icon: <Users />,
               title: "Customer Focus",
-              desc: "We align to your environment, risk profile, and business goals.",
+              desc: "We align to your unique environment, threat landscape, and business objectives.",
             },
             {
               icon: <Target />,
@@ -149,11 +151,12 @@ export default function AboutUs() {
         >
           <h3 className="text-3xl font-bold mb-4 text-center">Our Story</h3>
           <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-center">
-            AxiomVault was founded by security engineers and incident responders
-            who saw a common gap: modern teams needed clear signal, fast
-            response, and measurable security outcomes without a heavy stack.
-            We built a unified platform that combines detection, investigation,
-            and response so teams can focus on growth while staying protected.
+            AxiomVault was founded by elite security engineers and incident
+            responders who identified a critical gap: modern teams needed
+            high-fidelity signal, millisecond response, and measurable security
+            outcomes without a bloated stack. We architected a unified platform
+            that fuses detection, investigation, and response so teams can
+            innovate fearlessly while staying protected.
           </p>
         </motion.div>
       </section>

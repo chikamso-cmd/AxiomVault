@@ -11,7 +11,7 @@ import Nav from "../components/Nav";
 import { Stat, Insight } from "../components/ThreatsStats";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -45,7 +45,7 @@ export default function Analytics() {
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 py-14 text-center md:pt-35 pt-26">
         <span className="inline-block mb-4 px-3 py-1 text-xs rounded-full bg-green-500/10 text-axiom-red">
-          AI ADVANCED ANALYTICS DASHBOARD
+          AI-DRIVEN SOC ANALYTICS
         </span>
 
         <h1 className="text-3xl md:text-5xl font-bold text-axiom-red mb-4">
@@ -53,8 +53,8 @@ export default function Analytics() {
         </h1>
 
         <p className="max-w-2xl mx-auto text-gray-300 mb-10">
-          Clear, actionable analytics across transactions, identity, and
-          user behavior with evidence you can take to audit or leadership.
+          Gain deep visibility into anomalous transactions, identity risks, and
+          user behavior with forensic-grade evidence for audit and compliance.
         </p>
 
         {/* Stats */}
@@ -119,8 +119,8 @@ export default function Analytics() {
           <motion.div variants={itemVariants}>
             <Insight
               icon={<Clock size={18} />}
-              title="Peak Fraud Hours"
-              subtitle="9 PM - 11 PM shows highest risk activity"
+              title="Temporal Anomaly Detection"
+              subtitle="21:00 - 23:00 UTC correlates with high-risk activity"
               value="34% of daily alerts"
               gradient="from-orange-500 to-red-500"
             />
@@ -129,7 +129,7 @@ export default function Analytics() {
             <Insight
               icon={<CreditCard size={18} />}
               title="Top Fraud Category"
-              subtitle="Card-not-present and account recovery"
+              subtitle="CNP and account recovery flows targetted"
               value="48% of all incidents"
               gradient="from-yellow-500 to-orange-500"
             />
@@ -137,8 +137,8 @@ export default function Analytics() {
           <motion.div variants={itemVariants}>
             <Insight
               icon={<Globe size={18} />}
-              title="Geographic Hotspot"
-              subtitle="High-risk login attempts cluster by region"
+              title="Geospatial Threat Vectors"
+              subtitle="High-velocity login attempts cluster by region"
               value="22% of flagged sessions"
               gradient="from-orange-500 to-pink-500"
             />
@@ -146,8 +146,8 @@ export default function Analytics() {
           <motion.div variants={itemVariants}>
             <Insight
               icon={<Smartphone size={18} />}
-              title="Device Risk Factor"
-              subtitle="First-seen devices correlate to higher risk"
+              title="Device Fingerprint Risk"
+              subtitle="Unrecognized devices correlate to higher risk scores"
               value="12.3% alert rate"
               gradient="from-pink-500 to-red-500"
             />
@@ -166,14 +166,14 @@ export default function Analytics() {
 
         <Link to="/dashboard">
           <button className="bg-axiom-red hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
-            Open Analytics Dashboard 
+            Open Analytics Dashboard
           </button>
         </Link>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );

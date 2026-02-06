@@ -53,8 +53,9 @@ export default function Threats() {
         </h1>
 
         <p className="max-w-2xl mx-auto text-gray-300 mb-12">
-          Track emerging threats across payment channels, identity flows, and
-          APIs with live context from AxiomVault intelligence.
+          Monitor emerging attack vectors across payment gateways, identity
+          fabrics, and shadow APIs with live telemetry from the AxiomVault
+          Threat Intelligence Cloud.
         </p>
 
         {/* Threat Stats */}
@@ -68,7 +69,7 @@ export default function Threats() {
           <motion.div variants={itemVariants}>
             <ThreatStat
               icon={<CreditCard size={16} />}
-              title="Payment Card Fraud"
+              title="Card Not Present Fraud"
               value="2,847"
               change="-12%"
               color="orange"
@@ -78,7 +79,7 @@ export default function Threats() {
           <motion.div variants={itemVariants}>
             <ThreatStat
               icon={<UserX size={16} />}
-              title="Account Takeovers"
+              title="Credential Stuffing"
               value="1,423"
               change="-8%"
               color="yellow"
@@ -135,8 +136,8 @@ export default function Threats() {
           <motion.div variants={itemVariants}>
             <Method
               icon={<Activity size={18} />}
-              title="Behavioral Analysis"
-              desc="Session profiling flags anomaly clusters across devices"
+              title="Behavioral Heuristics"
+              desc="Session profiling flags lateral movement and anomaly clusters."
             />
           </motion.div>
           <motion.div variants={itemVariants}>
@@ -162,7 +163,8 @@ export default function Threats() {
           Start Protecting Your Business
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-8">
-          Get continuous monitoring, alert triage, and response guidance
+          Deploy continuous monitoring, automated alert triage, and rapid
+          response guidance in minutes.
         </p>
 
         <button className="bg-axiom-red hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
