@@ -5,20 +5,28 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [result, setResult] = useState("");
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", "2a4cf41b-ff9b-4425-a5b3-986c77041254");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Message sent successfully! We will get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
 
   return (
@@ -104,7 +112,7 @@ export default function ContactPage() {
           >
             <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={onSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm mb-2 text-gray-300">
                   Full Name
@@ -113,8 +121,6 @@ export default function ContactPage() {
                   type="text"
                   name="name"
                   required
-                  value={formData.name}
-                  onChange={handleChange}
                   placeholder="Enter your name"
                   className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-axiom-red"
                 />
@@ -128,8 +134,6 @@ export default function ContactPage() {
                   type="email"
                   name="email"
                   required
-                  value={formData.email}
-                  onChange={handleChange}
                   placeholder="Enter your email"
                   className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-axiom-red"
                 />
@@ -143,8 +147,6 @@ export default function ContactPage() {
                   name="message"
                   required
                   rows={5}
-                  value={formData.message}
-                  onChange={handleChange}
                   placeholder="Tell us how we can help you..."
                   className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/10 focus:outline-none focus:ring-2 focus:ring-axiom-red resize-none"
                 />
@@ -157,6 +159,9 @@ export default function ContactPage() {
                 <Send size={18} />
                 Send Message
               </button>
+              <span className="block text-center text-sm text-gray-400 mt-4">
+                {result}
+              </span>
             </form>
           </motion.div>
         </div>
