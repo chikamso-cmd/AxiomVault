@@ -51,7 +51,7 @@ export default function LandingPage() {
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-6">
               AI-Internal <br />
               <span className="text-axiom-red">
-                AI-Internal Fraud Detection System
+                 Fraud Detection System
               </span>
             </h1>
           </motion.div>

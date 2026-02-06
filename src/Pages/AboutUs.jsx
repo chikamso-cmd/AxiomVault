@@ -203,10 +203,7 @@ export default function AboutUs() {
               title: "Threat & Fraud Intelligence",
               desc: "Behavioral analytics and risk scoring for transactions and access attempts.",
             },
-            {
-              title: "Compliance & Reporting",
-              desc: "Evidence-driven reporting designed to align with SOC 2, ISO 27001, and PCI.",
-            },
+           
           ].map((item, i) => (
             <motion.div
               key={i}
