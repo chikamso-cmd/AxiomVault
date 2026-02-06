@@ -40,10 +40,11 @@ export default function PrivacyPolicy() {
               billing details, IP address, device information, and usage data.
             </Section3>
 
-            <Section3 title="3. How We Use Your Information">
-              We use collected information to provide, maintain, secure, and
-              improve our Services, process payments, and communicate with
-              users.
+            <Section3 title="3. Company Information and Data Controller">
+              AxiomVault operates as a subsidiary of Omnicipia. For the purposes
+              of applicable data protection laws, AxiomVault is the primary data
+              controller, and Omnicipia may act as a joint controller or data
+              processor where necessary to support our Services.
             </Section3>
 
             <Section3 title="4. Legal Basis for Processing">
@@ -57,8 +58,10 @@ export default function PrivacyPolicy() {
             </Section3>
 
             <Section3 title="6. Data Sharing and Disclosure">
-              We may share information with service providers, partners,
-              regulators, and law enforcement where legally required.
+              We may share information with trusted service providers, business
+              partners, regulatory authorities, law enforcement agencies, and
+              within the Omnicipia corporate group where necessary for
+              operational, security, compliance, and service delivery purposes.
             </Section3>
 
             <Section3 title="7. Data Retention">
@@ -72,8 +75,10 @@ export default function PrivacyPolicy() {
             </Section3>
 
             <Section3 title="9. International Data Transfers">
-              Your data may be transferred and processed in countries outside
-              your jurisdiction with appropriate safeguards.
+              Your data may be transferred, stored, and processed in countries
+              outside your jurisdiction, including within Omnicipia-affiliated
+              entities, with appropriate contractual and technical safeguards in
+              place.
             </Section3>
 
             <Section3 title="10. Your Rights">

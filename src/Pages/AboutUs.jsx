@@ -154,9 +154,11 @@ export default function AboutUs() {
             AxiomVault was founded by elite security engineers and incident
             responders who identified a critical gap: modern teams needed
             high-fidelity signal, millisecond response, and measurable security
-            outcomes without a bloated stack. We architected a unified platform
-            that fuses detection, investigation, and response so teams can
-            innovate fearlessly while staying protected.
+            outcomes without a bloated stack. As a subsidiary of Omnicipia, we
+            leverage enterprise-grade infrastructure, research, and innovation
+            to architect a unified platform that fuses detection, investigation,
+            and response—so teams can innovate fearlessly while staying
+            protected.
           </p>
         </motion.div>
       </section>

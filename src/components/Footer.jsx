@@ -113,7 +113,8 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center mt-5">
-        (c) {new Date().getFullYear()} AxiomVault Inc. Cybersecurity.
+        © {new Date().getFullYear()} AxiomVault Inc. All rights reserved. <br />
+        A subsidiary of Omnicipia.
       </p>
     </section>
   );

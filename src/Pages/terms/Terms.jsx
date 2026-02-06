@@ -56,8 +56,9 @@ export default function TermsOfUse() {
             </Section>
 
             <Section title="6. Intellectual Property">
-              All content, software, and trademarks belong to AxiomVault. No
-              rights are transferred to users.
+              All content, software, trademarks, and intellectual property
+              belong to AxiomVault and its parent company, Omnicipia, or their
+              licensors. No rights are transferred to users.
             </Section>
 
             <Section title="7. User Data">
@@ -161,7 +162,6 @@ export default function TermsOfUse() {
           </div>
         </motion.div>
       </main>
-
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-center text-gray-400 text-sm">
