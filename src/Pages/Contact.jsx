@@ -30,7 +30,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white px-4 py-16">
+    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white px-4 py-16">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
 
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-axiom-red hover:bg-[#1F5FA8] transition rounded-xl py-3 font-medium shadow-lg text-white"
+                className="w-full flex items-center justify-center gap-2 bg-axiom-red hover:bg-[#A6470F] transition rounded-xl py-3 font-medium shadow-lg text-white"
               >
                 <Send size={18} />
                 Send Message

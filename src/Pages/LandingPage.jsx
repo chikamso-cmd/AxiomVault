@@ -2,16 +2,17 @@
 import { ShieldCheck, Activity, BarChart2, Radar, Menu, X } from "lucide-react";
 import Nav from "../components/Nav";
 import {Feature, Incident, Stats, Metric} from  '../components/ThreatsStats'
+import Footer from "../components/Footer"
 
 export default function LandingPage() {
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#050B24] via-[#0B1C46] to-[#081436] text-white font-sans pt-10">
+    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white font-sans pt-10">
       {/* Navbar */}
       <Nav />
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
         {/* Left */}
         <div>
           <span className="inline-block bg-axiom-red/10 text-axiom-red text-xs px-3 py-1 rounded-full mb-4">
@@ -30,7 +31,7 @@ export default function LandingPage() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-axiom-red hover:bg-[#1F5FA8] transition px-6 py-3 rounded-lg font-medium text-white">
+            <button className="bg-axiom-red hover:bg-[#A6470F] transition px-6 py-3 rounded-lg font-medium text-white">
               Access Command Center →
             </button>
 
@@ -42,8 +43,8 @@ export default function LandingPage() {
           <div className="flex items-center gap-3 mt-8 text-sm text-gray-300">
             <div className="flex -space-x-2">
               <div className="w-6 h-6 rounded-full bg-axiom-red" />
-              <div className="w-6 h-6 rounded-full bg-[#5AA8E0]" />
-              <div className="w-6 h-6 rounded-full bg-[#F57C00]" />
+              <div className="w-6 h-6 rounded-full bg-[#A64711]" />
+              <div className="w-6 h-6 rounded-full bg-[#A64613]" />
             </div>
             <span>50k+ threats blocked daily</span>
           </div>
@@ -51,7 +52,7 @@ export default function LandingPage() {
 
         {/* Right Card */}
         <div className="relative">
-          <div className="bg-[#0B1F4A]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl max-w-md mx-auto">
+          <div className="bg-[#092042]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl max-w-md mx-auto">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-sm font-semibold text-axiom-red">
                 ACTIVE INCIDENTS
@@ -85,17 +86,17 @@ export default function LandingPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Feature
-            icon={<Activity className="text-axiom-red" />}
+            icon={<Activity className="text-[#fffff]" />}
             title="Real-Time Monitoring"
             desc="Watch every transaction in real-time. Detect anomalies instantly."
           />
           <Feature
-            icon={<BarChart2 className="text-[#F57C00]" />}
+            icon={<BarChart2 className="text-[#fffff]" />}
             title="Risk Scoring"
             desc="AI-powered risk scoring. Know your threat level at a glance."
           />
           <Feature
-            icon={<Radar className="text-[#4CAF50]" />}
+            icon={<Radar className="text-[#fffff]" />}
             title="Threat Intelligence"
             desc="Global threat feeds. Exploit detection. Always ahead."
           />
@@ -103,7 +104,7 @@ export default function LandingPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-[#07142F] py-12">
+      <section className="bg-[#ffff] py-12">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <Metric value="50K+" label="Threats Blocked Daily" />
           <Metric value="0.34s" label="Average Response Time" />
@@ -122,26 +123,17 @@ export default function LandingPage() {
           matters most.
         </p>
 
-        <button className="bg-axiom-red hover:bg-[#1F5FA8] transition px-8 py-3 rounded-lg font-medium text-white">
+        <button className="bg-axiom-red hover:bg-[#A6470F] transition px-8 py-3 rounded-lg font-medium text-white">
           Launch Command Center →
         </button>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-sm text-gray-500">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2 text-axiom-red font-bold">
-            <ShieldCheck size={16} className="text-axiom-red" />
-            AxiomVault
-          </div>
-
-          <p>
-            © {new Date().getFullYear()} AxiomVault. Inc Cybersecurity.
-          </p>
-        </div>
+        <Footer />
+       
       </footer>
     </div>
   );
 }
-
 

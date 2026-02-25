@@ -42,7 +42,7 @@ const itemVariants = {
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#050B24] via-[#0B1C46] to-[#081436] text-white font-sans pt-25">
+    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white font-sans pt-25">
       <div>
         <Nav />
       </div>
@@ -66,7 +66,7 @@ export default function Dashboard() {
                 key={t}
                 className={`px-3 py-1 rounded-md text-xs font-medium transition ${
                   t === "24h"
-                    ? "bg-[#4CAF50] text-white"
+                    ? "bg-[#A64711] text-white"
                     : "bg-axiom-red/20 text-axiom-red hover:bg-axiom-red/30"
                 }`}
               >
@@ -120,7 +120,7 @@ export default function Dashboard() {
 
 function ActiveThreats() {
   return (
-    <div className="bg-[#0B1F4A] border border-white/10 rounded-xl p-4">
+    <div className="bg-[#092042] border border-white/10 rounded-xl p-4">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold flex items-center gap-2">
           <AlertTriangle size={16} className="text-red-400" /> Active Threats
@@ -193,7 +193,7 @@ function Timeline() {
       initial="hidden"
       animate="show"
       exit="hidden"
-      className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4"
+      className="bg-[#092042]/70 border border-white/10 rounded-xl p-4"
     >
       <h3 className="font-semibold mb-4 flex items-center gap-2">
         <Activity size={16} className="text-blue-400" /> Incident Timeline
@@ -237,7 +237,7 @@ function Timeline() {
 
 function SystemStatus() {
   return (
-    <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4">
+    <div className="bg-[#092042]/70 border border-white/10 rounded-xl p-4">
       <h3 className="font-semibold mb-4">System Status</h3>
 
       <div className="space-y-3 text-sm">
@@ -252,7 +252,7 @@ function SystemStatus() {
 
 function RiskLevel() {
   return (
-    <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4 text-center">
+    <div className="bg-[#092042]/70 border border-white/10 rounded-xl p-4 text-center">
       <h3 className="font-semibold mb-4">Overall Risk Level</h3>
 
       <div className="relative w-28 h-28 mx-auto mb-3">
@@ -275,7 +275,7 @@ function RiskLevel() {
 
 function QuickActions() {
   return (
-    <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4">
+    <div className="bg-[#092042]/70 border border-white/10 rounded-xl p-4">
       <h3 className="font-semibold mb-4">Quick Actions</h3>
 
       <div className="space-y-3 text-sm">
@@ -289,3 +289,4 @@ function QuickActions() {
     </div>
   );
 }
+

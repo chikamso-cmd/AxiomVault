@@ -5,7 +5,7 @@ import {Section} from "../../components/PolicyComponents"
 
 export default function TermsOfUse() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#050B2C] via-[#0B1A4A] to-[#081029] text-white">
+    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white">
       {/* Header */}
       <header className="max-w-7xl mx-auto px-6 py-8">
         <Nav />

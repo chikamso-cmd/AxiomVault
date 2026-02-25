@@ -38,7 +38,7 @@ const itemVariants = {
 
 export default function Threats() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#050B24] via-[#0B1C46] to-[#081436] text-white pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white pt-20">
       {/* Navbar */}
       <Nav />
 
@@ -167,7 +167,7 @@ export default function Threats() {
           response guidance in minutes.
         </p>
 
-        <button className="bg-axiom-red hover:bg-[#1F5FA8] transition px-6 py-3 rounded-lg font-medium text-white">
+        <button className="bg-axiom-red hover:bg-[#A6470F] transition px-6 py-3 rounded-lg font-medium text-white">
           Launch Console
         </button>
       </section>
@@ -179,3 +179,4 @@ export default function Threats() {
     </div>
   );
 }
+

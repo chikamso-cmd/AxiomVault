@@ -1,26 +1,22 @@
 import { useState } from "react";
 import { ShieldCheck, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import LOGO from "../assets/LOGO.png";
+import Logo1 from "../assets/Logo1.png";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <section className="w-full fixed top-0 left-0 z-50">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5 sticky top-0 bg-[#0B1C46]/80 backdrop-blur-md border-b border-white/10 z-50">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5 sticky top-0 bg-white/80 backdrop-blur-md border-b border-white/10 z-50">
         <div className="flex items-center gap-2 font-bold text-lg">
           <Link to="/" className="flex gap-2 items-center">
-            {/* <ShieldCheck size={28} className="text-orange-500" />
-
-            <h1 className="text-white text-[25px]">
-              Axiom<span className="text-green-500">Vault</span> Inc
-            </h1> */}
-            <img src={LOGO} alt="AxiomVault Inc logo" className="w-40 " />
+           
+            <img src={Logo1} alt="AxiomVault Inc logo" className="w-40 " />
           </Link>
         </div>
 
-        <div className="hidden md:flex gap-8 text-sm text-gray-300">
+        <div className="hidden md:flex gap-8 text-sm text-vault-navy">
           <Link
             to="/dashboard"
             className="hover:text-axiom-red transition-colors duration-300 font-bold"
@@ -55,7 +51,7 @@ export default function Nav() {
 
         <div className="flex items-center gap-4">
           {/* <button className="text-sm text-gray-300">Sign In</button> */}
-          <button className="hidden md:block bg-axiom-red hover:bg-[#1F5FA8] transition px-4 py-2 rounded-lg text-sm font-medium text-white">
+          <button className="hidden md:block bg-axiom-red hover:bg-[#A6470F] transition px-4 py-2 rounded-lg text-sm font-medium text-white">
             Launch Console
           </button>
           <button
@@ -74,7 +70,7 @@ export default function Nav() {
 
       {/* Mobile Sidebar */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#0B1C46] h-[300px] space-y-2 border-b border-white/10 px-6 py-4 transition-all duration-500 ease-in-out sticky top-[64px] z-40">
+        <div className="md:hidden bg-[#082044] h-[300px] space-y-2 border-b border-white/10 px-6 py-4 transition-all duration-500 ease-in-out sticky top-[64px] z-40">
           <div className="flex flex-col gap-4">
             <Link
               to="/dashboard"
@@ -106,7 +102,7 @@ export default function Nav() {
             >
               Contact
             </Link>
-            <button className="bg-axiom-red hover:bg-[#1F5FA8] transition px-4 py-2 rounded-lg text-sm font-medium w-full text-white">
+            <button className="bg-axiom-red hover:bg-[#A6470F] transition px-4 py-2 rounded-lg text-sm font-medium w-full text-white">
               Launch Console
             </button>
           </div>
@@ -115,3 +111,4 @@ export default function Nav() {
     </section>
   );
 }
+

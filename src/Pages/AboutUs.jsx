@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#050B2C] via-[#0B1A4A] to-[#081029] text-white">
+    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white">
       {/* Header */}
       <Nav />
 
@@ -305,7 +305,7 @@ export default function AboutUs() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-axiom-red to-[#1F5FA8] rounded-2xl p-12"
+          className="bg-gradient-to-r from-axiom-red to-[#A6470F] rounded-2xl p-12"
         >
           <h3 className="text-3xl font-bold mb-4">Partner With AxiomVault</h3>
           <p className="text-white/90 mb-6 max-w-xl mx-auto">
@@ -328,3 +328,4 @@ export default function AboutUs() {
     </div>
   );
 }
+

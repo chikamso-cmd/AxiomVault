@@ -1,25 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  /* Primary Color - Blue */
-  --color-axiom-red: #2d91d1;
-  --color-primary: #2d91d1;
-  --color-primary-dark: #1f5fa8;
-  --color-primary-light: #5aa8e0;
+  /* Axiom palette */
+  --color-axiom-orange: #a64613;
+  --color-axiom-orange-light: #a64711;
+  --color-axiom-orange-dark: #a6470f;
+  --color-axiom-red: #a64613;
+  --color-primary: #a64613;
+  --color-primary-dark: #a6470f;
+  --color-primary-light: #a64711;
 
-  /* Accent Colors */
-  --color-accent-orange: #f57c00;
-  --color-accent-orange-light: #ffb74d;
-  --color-accent-green: #4caf50;
-  --color-accent-green-light: #81c784;
-  --color-accent-red: #ff6b6b;
-  --color-accent-red-dark: #e53935;
+  /* Vault palette */
+  --color-vault-navy: #082044;
+  --color-vault-navy-light: #092042;
+  --color-vault-navy-dark: #091f44;
+  --color-dark-bg: #082044;
+  --color-card-bg: #092042;
 
-  /* Neutral Colors */
-  --color-dark-bg: #0b1c46;
-  --color-card-bg: #0b1f4a;
+  /* Brand palette */
+  --color-brand-white: #ffffff;
+  --color-accent-orange: #a64613;
+  --color-accent-orange-light: #a64711;
+  --color-accent-green: #a64711;
+  --color-accent-green-light: #a64711;
+  --color-accent-red: #a6470f;
+  --color-accent-red-dark: #a6470f;
   --color-border: rgba(255, 255, 255, 0.1);
   --color-text-primary: #ffffff;
   --color-text-secondary: #b0bec5;
   --color-text-muted: #78909c;
 }
+

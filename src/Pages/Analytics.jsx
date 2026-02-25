@@ -37,7 +37,7 @@ const itemVariants = {
 
 export default function Analytics() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#050B24] via-[#0B1C46] to-[#081436] text-white">
+    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white">
       {/* Navbar */}
 
       <Nav />
@@ -178,3 +178,4 @@ export default function Analytics() {
     </div>
   );
 }
+
