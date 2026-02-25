@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
@@ -70,7 +70,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-axiom-red/10 text-orange-400">
+                <div className="p-3 rounded-xl bg-axiom-red/10 text-axiom-red">
                   <Mail size={20} />
                 </div>
                 <div>
@@ -80,7 +80,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-axiom-red/10 text-orange-400">
+                <div className="p-3 rounded-xl bg-axiom-red/10 text-axiom-red">
                   <Phone size={20} />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-axiom-red/10 text-orange-400">
+                <div className="p-3 rounded-xl bg-axiom-red/10 text-axiom-red">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-axiom-red hover:bg-orange-600 transition rounded-xl py-3 font-medium shadow-lg"
+                className="w-full flex items-center justify-center gap-2 bg-axiom-red hover:bg-[#1F5FA8] transition rounded-xl py-3 font-medium shadow-lg text-white"
               >
                 <Send size={18} />
                 Send Message
@@ -167,9 +167,9 @@ export default function ContactPage() {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-20 text-gray-500 text-sm">
-          <Footer />
-        </div>
+      </div>
+      <div className="text-center mt-20 w-full text-gray-500 text-sm max-w-full mx-auto">
+        <Footer />
       </div>
     </div>
   );

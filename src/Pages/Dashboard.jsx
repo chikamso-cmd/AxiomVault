@@ -47,14 +47,14 @@ export default function Dashboard() {
         <Nav />
       </div>
       {/* Main */}
-      <main className="max-w-7xl mx-auto px-4 pb-12">
+      <main className="max-w-7xl mx-auto px-4 pb-12 mt-10">
         {/* Title */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold mb-1">
+            <h1 className="text-2xl md:text-3xl font-bold mb-1 text-axiom-red">
               Security Command Center
             </h1>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-300">
               Centralized view of alerts, investigations, and response actions
             </p>
           </div>
@@ -66,8 +66,8 @@ export default function Dashboard() {
                 key={t}
                 className={`px-3 py-1 rounded-md text-xs font-medium transition ${
                   t === "24h"
-                    ? "bg-green-500 text-black"
-                    : "bg-[#0B1F4A] text-gray-300 hover:bg-[#102A64]"
+                    ? "bg-[#4CAF50] text-white"
+                    : "bg-axiom-red/20 text-axiom-red hover:bg-axiom-red/30"
                 }`}
               >
                 {t}
@@ -120,7 +120,7 @@ export default function Dashboard() {
 
 function ActiveThreats() {
   return (
-    <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-xl p-4">
+    <div className="bg-[#0B1F4A] border border-white/10 rounded-xl p-4">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold flex items-center gap-2">
           <AlertTriangle size={16} className="text-red-400" /> Active Threats

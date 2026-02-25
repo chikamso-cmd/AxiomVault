@@ -44,7 +44,7 @@ export default function Analytics() {
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 py-14 text-center md:pt-35 pt-26">
-        <span className="inline-block mb-4 px-3 py-1 text-xs rounded-full bg-green-500/10 text-axiom-red">
+        <span className="inline-block mb-4 px-3 py-1 text-xs rounded-full bg-axiom-red/10 text-axiom-red">
           AI-DRIVEN SOC ANALYTICS
         </span>
 

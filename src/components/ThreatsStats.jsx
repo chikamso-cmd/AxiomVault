@@ -1,9 +1,9 @@
 export const ThreatStat = ({ icon, title, value, change, color, children }) => {
   const colors = {
-    orange: "text-orange-400 bg-orange-500/20",
+    orange: "text-[#FFB74D] bg-[#F57C00]/20",
     yellow: "text-yellow-400 bg-yellow-500/20",
-    red: "text-red-400 bg-red-500/20",
-    pink: "text-pink-400 bg-pink-500/20",
+    red: "text-[#FF6B6B] bg-[#FF6B6B]/20",
+    pink: "text-[#81C784] bg-[#4CAF50]/20",
   };
 
   return (
@@ -16,7 +16,7 @@ export const ThreatStat = ({ icon, title, value, change, color, children }) => {
 
       <div className="flex items-center gap-3">
         <p className="text-xl font-bold">{value}</p>
-        <span className="text-xs bg-red-500/20 text-red-400 px-2 py-0.5 rounded-full">
+        <span className="text-xs bg-[#FF6B6B]/20 text-[#FF6B6B] px-2 py-0.5 rounded-full">
           {change}
         </span>
       </div>
@@ -27,8 +27,8 @@ export const ThreatStat = ({ icon, title, value, change, color, children }) => {
 export const Method = ({ icon, title, desc }) => {
   return (
     <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-2xl p-6 shadow-lg">
-      <div className="flex  flex-col gap-2 mb-3 justify-start text-orange-400 ">
-        <div className=" bg-orange-500/20 p-2 rounded-md w-fit">{icon}</div>
+      <div className="flex  flex-col gap-2 mb-3 justify-start text-[#FFB74D] ">
+        <div className=" bg-[#F57C00]/20 p-2 rounded-md w-fit">{icon}</div>
         <h3 className="font-semibold text-white">{title}</h3>
       </div>
 
@@ -53,8 +53,8 @@ export const Stat = ({ icon, title, value, change }) => {
         <span
           className={`text-xs px-2 py-0.5 rounded-full ${
             positive
-              ? "bg-green-500/20 text-axiom-red"
-              : "bg-red-500/20 text-red-400"
+              ? "bg-[#4CAF50]/20 text-[#81C784]"
+              : "bg-[#FF6B6B]/20 text-[#FF6B6B]"
           }`}
         >
           {change}
@@ -62,7 +62,7 @@ export const Stat = ({ icon, title, value, change }) => {
       </div>
     </div>
   );
-}
+};
 
 // new component for analytics Insight
 export const Insight = ({ icon, title, subtitle, value, gradient }) => {
@@ -82,16 +82,16 @@ export const Insight = ({ icon, title, subtitle, value, gradient }) => {
       </div>
     </div>
   );
-}
+};
 
 // dashboard threat stat
 
-export const Threat = ({ level, title, meta, blocked }) =>  {
+export const Threat = ({ level, title, meta, blocked }) => {
   const colors = {
-    critical: "from-red-600/30 to-red-500/10 text-red-400",
-    high: "from-orange-500/30 to-orange-400/10 text-orange-400",
+    critical: "from-[#FF6B6B]/30 to-[#FF6B6B]/10 text-[#FF6B6B]",
+    high: "from-[#F57C00]/30 to-[#F57C00]/10 text-[#FFB74D]",
     medium: "from-yellow-500/30 to-yellow-400/10 text-yellow-400",
-    low: "from-green-500/30 to-green-400/10 text-axiom-red",
+    low: "from-[#4CAF50]/30 to-[#4CAF50]/10 text-[#81C784]",
   };
 
   return (
@@ -105,14 +105,14 @@ export const Threat = ({ level, title, meta, blocked }) =>  {
       <p className="text-xs text-gray-300">Blocked: {blocked} requests</p>
     </div>
   );
-}
+};
 
 // dashboard timeline
-export const TimelineItem = ({ time, title, status, color }) =>  {
+export const TimelineItem = ({ time, title, status, color }) => {
   const map = {
-    red: "text-red-400 bg-red-500/20",
-    orange: "text-orange-400 bg-orange-500/20",
-    green: "text-axiom-red bg-green-500/20",
+    red: "text-[#FF6B6B] bg-[#FF6B6B]/20",
+    orange: "text-[#FFB74D] bg-[#F57C00]/20",
+    green: "text-[#81C784] bg-[#4CAF50]/20",
   };
 
   return (
@@ -128,23 +128,21 @@ export const TimelineItem = ({ time, title, status, color }) =>  {
       </div>
     </div>
   );
-}
+};
 
-//dashboard stats card 
+//dashboard stats card
 
 export const StatCard = ({ title, value, change }) => {
   const positive = !change.startsWith("-");
 
   return (
-    <div className="bg-[#0B1F4A]/80 border border-white/10 rounded-xl p-4">
-      <p className="text-xs text-gray-400 mb-1">{title}</p>
+    <div className="bg-axiom-red text-white border border-white/10 rounded-xl p-4">
+      <p className="text-xs mb-1">{title}</p>
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-bold">{value}</h3>
         <span
           className={`text-xs px-2 py-0.5 rounded-full ${
-            positive
-              ? "bg-green-500/20 text-axiom-red"
-              : "bg-red-500/20 text-red-400"
+            positive ? "bg-white text-axiom-red" : "bg-white text-[#FF6B6B]"
           }`}
         >
           {change}
@@ -152,9 +150,9 @@ export const StatCard = ({ title, value, change }) => {
       </div>
     </div>
   );
-}
+};
 
-// 
+//
 export const StatusRow = ({ label, value }) => {
   return (
     <div className="flex justify-between">
@@ -162,7 +160,7 @@ export const StatusRow = ({ label, value }) => {
       <span className="text-axiom-red font-medium">{value}</span>
     </div>
   );
-}
+};
 
 // dashboard action card
 
@@ -176,45 +174,43 @@ export const Action = ({ icon, text }) => {
       <span className="text-white">→</span>
     </button>
   );
-}
-
+};
 
 // landing page cinstants
 
 export const Feature = ({ icon, title, desc }) => {
   return (
-    <div className="bg-[#0B1F4A]/70 border border-white/10 rounded-2xl p-6 text-left shadow-lg">
+    <div className="bg-axiom-red border border-white/10 rounded-2xl p-6 text-left shadow-lg">
       <div className="mb-4">{icon}</div>
       <h3 className="font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-400">{desc}</p>
+      <p className="text-sm text-white">{desc}</p>
     </div>
   );
-}
+};
 
-export const Incident = ({ title, value }) =>  {
+export const Incident = ({ title, value }) => {
   return (
     <div className="flex justify-between items-center">
-      <span className="text-gray-300">{title}</span>
-      <span className="text-red-400 font-medium">{value}</span>
+      <span className="text-white">{title}</span>
+      <span className="text-white font-medium">{value}</span>
     </div>
   );
-}
+};
 
 export const Stats = ({ label, value }) => {
   return (
-    <div className="bg-[#081733] rounded-lg p-3 text-center">
+    <div className="bg-white shadow rounded-lg p-3 text-center">
       <p className="text-axiom-red font-semibold">{value}</p>
-      <p className="text-gray-400 mt-1">{label}</p>
+      <p className="text-axiom-red mt-1">{label}</p>
     </div>
   );
-}
+};
 
 export const Metric = ({ value, label }) => {
   return (
     <div>
-      <p className="text-axiom-red text-2xl font-bold mb-1">{value}</p>
-      <p className="text-gray-400 text-sm">{label}</p>
+      <p className=" text-2xl font-bold mb-1">{value}</p>
+      <p className=" text-sm">{label}</p>
     </div>
   );
-}
-
+};

@@ -1,12 +1,10 @@
-import {useState} from 'react'
+import { useState } from "react";
 import { ShieldCheck, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import LOGO from '../assets/LOGO.png'
-
-
+import LOGO from "../assets/LOGO.png";
 
 export default function Nav() {
-     const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <section className="w-full fixed top-0 left-0 z-50">
@@ -18,7 +16,7 @@ export default function Nav() {
             <h1 className="text-white text-[25px]">
               Axiom<span className="text-green-500">Vault</span> Inc
             </h1> */}
-            <img src={LOGO} alt="AxiomVault Inc logo" className='w-40 ' />
+            <img src={LOGO} alt="AxiomVault Inc logo" className="w-40 " />
           </Link>
         </div>
 
@@ -57,7 +55,7 @@ export default function Nav() {
 
         <div className="flex items-center gap-4">
           {/* <button className="text-sm text-gray-300">Sign In</button> */}
-          <button className="hidden md:block bg-red-700 hover:bg-axiom-red transition px-4 py-2 rounded-lg text-sm font-medium">
+          <button className="hidden md:block bg-axiom-red hover:bg-[#1F5FA8] transition px-4 py-2 rounded-lg text-sm font-medium text-white">
             Launch Console
           </button>
           <button
@@ -108,7 +106,7 @@ export default function Nav() {
             >
               Contact
             </Link>
-            <button className="bg-orange-500 hover:bg-axiom-red transition px-4 py-2 rounded-lg text-sm font-medium w-full">
+            <button className="bg-axiom-red hover:bg-[#1F5FA8] transition px-4 py-2 rounded-lg text-sm font-medium w-full text-white">
               Launch Console
             </button>
           </div>

@@ -5,16 +5,12 @@ import LOGO from '../assets/LOGO.png'
 
 export default function Footer() {
   return (
-    <section className="py-6 text-sm text-gray-500">
-      <div className=" border-b border-white/10 max-w-7xl pb-5 mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-5">
+    <section className="py-6 text-sm text-white bg-axiom-red w-full">
+      <div className=" border-b border-white/10 px-20 pb-5 mx-auto grid grid-cols-1 md:grid-cols-4 gap-5">
         <div className="flex flex-col gap-2">
-          {/* <h1 className="flex items-center gap-2 font-bold text-[20px] text-white">
-            {" "}
-            <ShieldCheck size={16} className="font-bold" />
-            AxiomVault
-          </h1> */}
+         
           <Link to="/">
-            <img src={LOGO} alt="AxiomVault Inc logo" className="w-40 " />
+            <img src={LOGO} alt="AxiomVault Inc logo" className="w-40  " />
           </Link>
           <p className="pt-2 font-medium text-left">
             AxiomVault is the first technical layer of defense against internal

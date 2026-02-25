@@ -44,7 +44,7 @@ export default function Threats() {
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 py-16 text-center">
-        <span className="inline-flex items-center gap-2 mb-4 px-3 py-1 text-xs rounded-full bg-green-500/10 text-axiom-red">
+        <span className="inline-flex items-center gap-2 mb-4 px-3 py-1 text-xs rounded-full bg-axiom-red/10 text-axiom-red">
           <Activity size={12} /> REAL-TIME THREAT DETECTION
         </span>
 
@@ -167,7 +167,7 @@ export default function Threats() {
           response guidance in minutes.
         </p>
 
-        <button className="bg-axiom-red hover:bg-orange-600 transition px-6 py-3 rounded-lg font-medium">
+        <button className="bg-axiom-red hover:bg-[#1F5FA8] transition px-6 py-3 rounded-lg font-medium text-white">
           Launch Console
         </button>
       </section>

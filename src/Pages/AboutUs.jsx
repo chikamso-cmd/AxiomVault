@@ -203,7 +203,6 @@ export default function AboutUs() {
               title: "Threat & Fraud Intelligence",
               desc: "Behavioral analytics and risk scoring for transactions and access attempts.",
             },
-           
           ].map((item, i) => (
             <motion.div
               key={i}
@@ -306,7 +305,7 @@ export default function AboutUs() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-12"
+          className="bg-gradient-to-r from-axiom-red to-[#1F5FA8] rounded-2xl p-12"
         >
           <h3 className="text-3xl font-bold mb-4">Partner With AxiomVault</h3>
           <p className="text-white/90 mb-6 max-w-xl mx-auto">
