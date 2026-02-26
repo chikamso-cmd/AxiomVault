@@ -1,11 +1,10 @@
-
 import { ShieldCheck, Activity, BarChart2, Radar, Menu, X } from "lucide-react";
 import Nav from "../components/Nav";
-import {Feature, Incident, Stats, Metric} from  '../components/ThreatsStats'
-import Footer from "../components/Footer"
+import { Feature, Incident, Stats, Metric } from "../components/ThreatsStats";
+import Footer from "../components/Footer";
+import Onboarding from "../components/Onboarding";
 
 export default function LandingPage() {
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white font-sans pt-10">
       {/* Navbar */}
@@ -31,11 +30,11 @@ export default function LandingPage() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-axiom-red hover:bg-[#A6470F] transition px-6 py-3 rounded-lg font-medium text-white">
+            <button className="bg-axiom-red hover:bg-[#A6470F] transition px-6 py-3 rounded-lg font-medium text-white w-full md:w-fit">
               Access Command Center →
             </button>
 
-            <button className="border border-axiom-red hover:bg-axiom-red/10 transition px-6 py-3 rounded-lg font-medium text-axiom-red">
+            <button className="border border-axiom-red hover:bg-axiom-red/10 transition px-6 py-3 rounded-lg font-medium text-axiom-red w-full md:w-fit">
               View Demo
             </button>
           </div>
@@ -104,7 +103,7 @@ export default function LandingPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-[#ffff] py-12">
+      <section className="bg-white/5 backdrop-blur py-12 ">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <Metric value="50K+" label="Threats Blocked Daily" />
           <Metric value="0.34s" label="Average Response Time" />
@@ -114,8 +113,8 @@ export default function LandingPage() {
       </section>
 
       {/* CTA */}
-      <section className="text-center py-20 px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className="text-center py-20 px-6 bg-white mt-20">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-vault-navy">
           Secure Your Enterprise Today
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-8">
@@ -127,13 +126,14 @@ export default function LandingPage() {
           Launch Command Center →
         </button>
       </section>
+      <section className="text-center py-20 px-6 bgimg bg-white relative">
+        <Onboarding />
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-sm text-gray-500">
         <Footer />
-       
       </footer>
     </div>
   );
 }
-

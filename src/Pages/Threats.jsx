@@ -167,7 +167,7 @@ export default function Threats() {
           response guidance in minutes.
         </p>
 
-        <button className="bg-axiom-red hover:bg-[#A6470F] transition px-6 py-3 rounded-lg font-medium text-white">
+        <button className="bg-axiom-red hover:bg-[#A6470F] transition px-6 py-3 rounded-lg font-medium text-white w-full md:w-fit">
           Launch Console
         </button>
       </section>

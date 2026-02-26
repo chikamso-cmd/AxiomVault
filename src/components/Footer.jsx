@@ -6,7 +6,7 @@ import Logo1 from '../assets/Logo1.png'
 export default function Footer() {
   return (
     <section className="py-6 text-sm text-vault-navy bg-text-primary w-full">
-      <div className=" border-b border-b-vault-navy/10 px-20 py-10 mx-auto grid grid-cols-1 md:grid-cols-4 gap-5">
+      <div className=" border-b border-b-vault-navy/10 md:px-20 px-5 py-10 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <div className="flex flex-col gap-2">
          
           <Link to="/">

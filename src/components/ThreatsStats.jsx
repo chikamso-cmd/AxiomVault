@@ -208,7 +208,7 @@ export const Stats = ({ label, value }) => {
 
 export const Metric = ({ value, label }) => {
   return (
-    <div className="text-vault-navy">
+    <div className="text-brand">
       <p className=" text-2xl font-bold mb-1">{value}</p>
       <p className=" text-sm">{label}</p>
     </div>

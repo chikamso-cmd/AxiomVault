@@ -60,9 +60,9 @@ export default function Nav() {
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? (
-              <X size={24} className="text-white" />
+              <X size={24} className="text-axiom-red" />
             ) : (
-              <Menu size={24} className="text-white" />
+              <Menu size={24} className="text-axiom-red" />
             )}
           </button>
         </div>

@@ -30,7 +30,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white px-4 py-16">
+    <div className="min-h-screen bg-gradient-to-br from-[#091F44] via-[#082044] to-[#092042] text-white ">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
 
@@ -39,7 +39,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 pt-20"
+          className="text-center mb-16 pt-20 mt-20 md:px-10 px-5"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Contact <span className="text-axiom-red">Axiom Vault</span>
@@ -52,7 +52,7 @@ export default function ContactPage() {
         </motion.div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start md:px-10 px-5">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -108,7 +108,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="bg-slate-900/70 backdrop-blur-xl border border-white/10 rounded-2xl p-8 shadow-xl"
+            className="bg-slate-900/70 backdrop-blur-xl border border-white/10 rounded-2xl p-8 shadow-xl px-5"
           >
             <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
 

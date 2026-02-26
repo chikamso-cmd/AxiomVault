@@ -299,13 +299,13 @@ export default function AboutUs() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-7xl mx-auto px-6 pb-32 text-center">
+      <section className="md:max-w-7xl mx-auto md:px-6 pb-32 text-center w-full ">
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-axiom-red to-[#A6470F] rounded-2xl p-12"
+          className="bg-gradient-to-r from-axiom-red to-[#A6470F] md:rounded-2xl p-5"
         >
           <h3 className="text-3xl font-bold mb-4">Partner With AxiomVault</h3>
           <p className="text-white/90 mb-6 max-w-xl mx-auto">
@@ -314,7 +314,7 @@ export default function AboutUs() {
           </p>
 
           <Link to="/contact">
-            <button className="bg-white text-axiom-red font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+            <button className="bg-white text-axiom-red font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition w-full md:w-fit">
               Contact Our Team
             </button>
           </Link>
