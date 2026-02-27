@@ -177,10 +177,9 @@ export default function LandingPage() {
       >
         <div className="text-center py-20 px-6 bgimg bg-white relative">
           {/* overlay */}
-          <div className="absolute inset-0 top-35 left-[50%] bg-accent-green rounded-full w-[50px] h-[50px] animate-ping  "></div>
-          <div className="absolute inset-0 -top-5 left-0 bg-accent-green rounded-full w-[50px] h-[50px] animate-ping "></div>
-          <div className="absolute inset-0 top-[99%] md:left-[96%] left-[83%] bg-accent-green rounded-full w-[50px] h-[50px] animate-ping "></div>
-          <div className="absolute inset-0 top-5 left-0 bg-accent-green rounded-full w-[25px] h-[25px] animate-ping "></div>
+          <div className="absolute inset-0 top-35 left-[50%] bg-accent-green/50 rounded-full w-[50px] h-[50px] animate-ping  "></div>
+          <div className="absolute inset-0 -top-5 left-0 bg-accent-green/50 rounded-full w-[50px] h-[50px] animate-pulse "></div>
+         
          
           <Onboarding />
         </div>
