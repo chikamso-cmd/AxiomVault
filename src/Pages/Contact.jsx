@@ -154,7 +154,8 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-axiom-red hover:bg-[#A6470F] transition rounded-xl py-3 font-medium shadow-lg text-white"
+                title="Send us a message"
+                className="w-full flex items-center justify-center gap-2 bg-axiom-red hover:bg-[#A6470F] transition rounded-xl py-3 font-medium shadow-lg text-white cursor-pointer"
               >
                 <Send size={18} />
                 Send Message

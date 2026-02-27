@@ -314,7 +314,7 @@ export default function AboutUs() {
           </p>
 
           <Link to="/contact">
-            <button className="bg-white text-axiom-red font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition w-full md:w-fit">
+            <button className="bg-white text-axiom-red font-semibold px-6 py-3 rounded-lg hover:bg-transparent hover:text-white hover:border cursor-pointer w-full md:w-fit transition-all duration-300">
               Contact Our Team
             </button>
           </Link>

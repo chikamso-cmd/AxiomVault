@@ -12,11 +12,13 @@ export default function Onboarding() {
         Onboarding Questionaire
       </h2>
       <p className="text-gray-400 max-w-xl mx-auto mb-8">{introText}</p>
+
       <a
         href={formUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-white rounded bg-axiom-red hover:bg-[#A6470F] transition px-8 py-3 rounded-lg font-medium text-white"
+        title="Onboarding Form"
+        className="text-white  hover:bg-axiom-red bg-[#a6460f00] transition -all px-8 py-3 rounded-lg font-medium animate-pulse border-2 duration-300 hover:border-0"
       >
         Open Onboarding Form
       </a>

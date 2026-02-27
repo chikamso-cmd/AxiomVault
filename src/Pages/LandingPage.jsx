@@ -3,6 +3,29 @@ import Nav from "../components/Nav";
 import { Feature, Incident, Stats, Metric } from "../components/ThreatsStats";
 import Footer from "../components/Footer";
 import Onboarding from "../components/Onboarding";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function LandingPage() {
   return (
@@ -13,7 +36,12 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
         {/* Left */}
-        <div>
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           <span className="inline-block bg-axiom-red/10 text-axiom-red text-xs px-3 py-1 rounded-full mb-4">
             REAL-TIME THREAT INTELLIGENCE
           </span>
@@ -47,10 +75,16 @@ export default function LandingPage() {
             </div>
             <span>50k+ threats blocked daily</span>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Card */}
-        <div className="relative">
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
           <div className="bg-[#092042]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl max-w-md mx-auto">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-sm font-semibold text-axiom-red">
@@ -70,11 +104,16 @@ export default function LandingPage() {
               <Stats label="Detection Rate" value="99.7%" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Features */}
-      <section className="max-w-7xl mx-auto px-6 py-20 text-center">
+      <motion.div
+        initial={{ opacity: 0, x: 40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="max-w-7xl mx-auto px-6 py-20 text-center"
+      >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Enterprise Security Features
         </h2>
@@ -100,16 +139,21 @@ export default function LandingPage() {
             desc="Global threat feeds. Exploit detection. Always ahead."
           />
         </div>
-      </section>
+      </motion.div>
 
       {/* Stats */}
       <section className="bg-white/5 backdrop-blur py-12 ">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+        >
           <Metric value="50K+" label="Threats Blocked Daily" />
           <Metric value="0.34s" label="Average Response Time" />
           <Metric value="99.7%" label="Detection Rate" />
           <Metric value="24/7" label="Enterprise Support" />
-        </div>
+        </motion.div>
       </section>
 
       {/* CTA */}
@@ -126,9 +170,21 @@ export default function LandingPage() {
           Launch Command Center →
         </button>
       </section>
-      <section className="text-center py-20 px-6 bgimg bg-white relative">
-        <Onboarding />
-      </section>
+      <motion.div
+        initial={{ opacity: 0, y: 70 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+      >
+        <div className="text-center py-20 px-6 bgimg bg-white relative">
+          {/* overlay */}
+          <div className="absolute inset-0 top-35 left-[50%] bg-accent-green rounded-full w-[50px] h-[50px] animate-ping  "></div>
+          <div className="absolute inset-0 -top-5 left-0 bg-accent-green rounded-full w-[50px] h-[50px] animate-ping "></div>
+          <div className="absolute inset-0 top-[99%] md:left-[96%] left-[83%] bg-accent-green rounded-full w-[50px] h-[50px] animate-ping "></div>
+          <div className="absolute inset-0 top-5 left-0 bg-accent-green rounded-full w-[25px] h-[25px] animate-ping "></div>
+         
+          <Onboarding />
+        </div>
+      </motion.div>
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-6 text-sm text-gray-500">
