@@ -8,10 +8,9 @@ export default function Nav() {
 
   return (
     <section className="w-full fixed top-0 left-0 z-50">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5 sticky top-0 bg-white/80 backdrop-blur-md border-b border-white/10 z-50">
+      <nav className=" mx-auto flex items-center justify-between px-6 py-5 sticky top-0 bg-white/80 backdrop-blur-md border-b border-white/10 z-50">
         <div className="flex items-center gap-2 font-bold text-lg">
           <Link to="/" className="flex gap-2 items-center">
-           
             <img src={Logo1} alt="AxiomVault Inc logo" className="w-40 " />
           </Link>
         </div>
@@ -111,4 +110,3 @@ export default function Nav() {
     </section>
   );
 }
-

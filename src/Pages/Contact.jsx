@@ -39,7 +39,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 pt-20 mt-20 md:px-10 px-5"
+          className="text-center mb-16 pt-30 md:px-10 px-5"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Contact <span className="text-axiom-red">Axiom Vault</span>
