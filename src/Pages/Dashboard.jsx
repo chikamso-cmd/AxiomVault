@@ -51,7 +51,7 @@ export default function Dashboard() {
         {/* Title */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold mb-1 text-axiom-red">
+            <h1 className="text-2xl md:text-3xl font-bold mb-1 text-white">
               Security Command Center
             </h1>
             <p className="text-sm text-gray-300">

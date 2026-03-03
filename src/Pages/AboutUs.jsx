@@ -322,7 +322,7 @@ export default function AboutUs() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-6 text-center text-gray-400 text-sm">
+      <footer className="border-t border-white/10 text-center text-gray-400 text-sm">
         <Footer />
       </footer>
     </div>

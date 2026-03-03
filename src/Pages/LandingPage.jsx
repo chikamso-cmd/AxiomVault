@@ -165,7 +165,7 @@ export default function LandingPage() {
       </motion.div>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-6 text-sm text-gray-500">
+      <footer className="border-t border-white/10 text-sm text-gray-500">
         <Footer />
       </footer>
     </div>

@@ -48,7 +48,7 @@ export default function Threats() {
           <Activity size={12} /> REAL-TIME THREAT DETECTION
         </span>
 
-        <h1 className="text-3xl md:text-5xl font-bold text-axiom-red mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
           Global Threat Landscape
         </h1>
 
@@ -173,7 +173,7 @@ export default function Threats() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
+      <footer className="border-t border-white/10 text-center text-xs text-gray-500">
         <Footer />
       </footer>
     </div>
